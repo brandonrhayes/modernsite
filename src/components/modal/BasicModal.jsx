@@ -8,18 +8,10 @@ export default function BasicModal() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-
-    </div>
-    //   <Modal
-    //     open={open}
-    //     onClose={handleClose}
-    //     aria-labelledby="modal-modal-title"
-    //     aria-describedby="modal-modal-description"
-    //   >
-    //     <h1>testing</h1>
-    //   </Modal>
-    // </div>
+    <div></div>
+    // <Modal> 
+    //   <h5>test</h5>
+    // </Modal>
   );
 }
 
