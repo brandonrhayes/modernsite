@@ -20,7 +20,7 @@ const About = () => {
 
           <div className='about__content'>
             <div className='about__cards'>
-              <article className='about__card'>
+              {/* <article className='about__card'>
                 <FaAward className='about__icon'/>
                 <h5>Experience</h5>
                 <small>5+ Years Working</small>
@@ -36,7 +36,7 @@ const About = () => {
                 <FaAward className='about__icon'/>
                 <h5>Experience</h5>
                 <small>5+ Years Working</small>
-              </article>
+              </article> */}
 
             </div>
               <p>I was born and raised in a small town near the shoreline of Lake Huron, one of Canada's Great Lakes. 
