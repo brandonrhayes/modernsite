@@ -18,7 +18,7 @@ header {
     justify-content: center;
 }
 
-/* ====================== CTA ====================== */
+/* ====================== SOCIALS ====================== */
 .header__socials {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@ header {
 }
 
 .header__socials::after {
-    content: '';
+    content: "";
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
@@ -38,7 +38,8 @@ header {
 
 /* ====================== ME ====================== */
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    background: linear-gradient(var(
+        --color-primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -55,4 +56,27 @@ header {
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .me {
+        padding: 5rem 0.25rem 0;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
 }
