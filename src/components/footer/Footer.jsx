@@ -5,7 +5,7 @@ import {AiFillTwitterSquare} from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id='footer'>
       <a href="#" className='footer__logo'>Brandonrhayes</a>
 
       <ul className='permalinks'>
