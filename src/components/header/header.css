@@ -81,6 +81,7 @@ header {
 
     .me {
         padding: 5rem 0.25rem 0;
+        height: 51vh;
     }
 
     .header__socials,
