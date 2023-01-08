@@ -12,11 +12,11 @@ const Header = () => {
         <div className="container header__container">
           <h4>Hey, curious one. Welcome to the adventure!</h4>
           <h1>Brandon Hayes</h1>
-          <h5 classname="text-light">Lead Product Manager</h5>
+          <h5 className="text-light">Lead Product Manager</h5>
           <CTA />
 
           <div className="me">
-            <img src={ME} alt="me" />
+            <img src={ME} className="me__img" alt="me" />
           </div>
 
           <a href="#contact" className='scroll__down'><AiFillDownCircle/></a>

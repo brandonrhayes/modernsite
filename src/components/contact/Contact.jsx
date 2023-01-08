@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useReducer } from 'react'
 import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
@@ -8,15 +8,44 @@ import BasicModal from '../modal/BasicModal'
 const Contact = () => {
   const form = useRef();
 
+  const [open, setOpen] = useState(false);
+
+  const modalReducer = (state, action) => {
+    switch (action.type) {
+      case "SUCCESS":
+        return {
+          header: 'Thank you',
+          content: 'Your message has been sent to Brandon.',
+          buttonText: 'Close'
+        }
+        
+      case "ERROR":
+        return {
+          header: 'Whoops...', 
+          content: 'Something went wrong. Your message has failed to send.',
+          buttonText: 'Try Again'
+        }
+      default:
+        throw new Error();
+    }
+  }
+  
+  const [modalState, modalDispatch] = useReducer (modalReducer, {
+    header: '',
+    content: '',
+    buttonText: ''
+  })
+
   function Form() {
     function handleSubmit(e) {
       e.preventDefault();
-
       emailjs.sendForm('service_sxxfleg', 'template_urw8pud', form.current, 'FisbNRwLM1hbUYXvo')
         .then((result) => {
-          BasicModal(result.text);
+          modalDispatch({type: "SUCCESS"})
+          setOpen(true)
         }, (error) => {
-          BasicModal(error.text);
+          modalDispatch("ERROR")
+          setOpen(true)
       });
       e.target.reset()
     }
@@ -32,39 +61,6 @@ const Contact = () => {
     );
   }
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_sxxfleg', 'template_urw8pud', form.current, 'FisbNRwLM1hbUYXvo')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  //     e.target.reset()
-  // };
-
-  // const openModal = () => {
-  //   <div>
-  //     <Button onClick={handleOpen}>Open modal</Button>
-  //     <Modal
-  //       open={open}
-  //       onClose={handleClose}
-  //       aria-labelledby="modal-modal-title"
-  //       aria-describedby="modal-modal-description"
-  //     >
-  //       <Box sx={style}>
-  //         <Typography id="modal-modal-title" variant="h6" component="h2">
-  //           Text in a modal
-  //         </Typography>
-  //         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-  //           Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-  //         </Typography>
-  //       </Box>
-  //     </Modal>
-  //   </div>
-  // }
-
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -76,7 +72,7 @@ const Contact = () => {
             <AiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>hello@brandonrhayes.com</h5>
-            <a href="mailto:hello@brandonrhayes.com">Send a message</a>
+            <a href="mailto:hello@brandonrhayes.com" target="_blank" rel="noreferrer">Send a message</a>
           </article>
           <article className='contact__option'>
             <AiOutlineInstagram className='contact__option-icon'/>
@@ -88,6 +84,13 @@ const Contact = () => {
         {/*END OF CONTACT OPTIONS */}
 
         <Form/>
+
+        {open && <BasicModal 
+                    handleClose={setOpen} 
+                    header={modalState.header} 
+                    content={modalState.content} 
+                    buttonText={modalState.buttonText}
+                  />}
 
       </div>
     </section>
