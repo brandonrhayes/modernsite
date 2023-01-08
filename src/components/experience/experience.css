@@ -1,0 +1,21 @@
+p {
+    position: relative;
+    text-align: center;
+}
+
+/* ====================== CTA ====================== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+    .cta {
+        flex-direction: column;
+        
+    }
+}

@@ -8,7 +8,7 @@ const Services = () => {
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
-      <p className='container services__container'>Coming soon...</p>
+      <p>Coming soon... Right now I'm out enjoying the mountains in beautiful Banff National Park, AB</p>
 
       {/* <div className='container services__container'>
         <article className='service'>

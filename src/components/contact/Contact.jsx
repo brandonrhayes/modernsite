@@ -2,6 +2,7 @@ import React, { useRef, useState, useReducer } from 'react'
 import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import {AiOutlineInstagram} from 'react-icons/ai'
+import {AiOutlineCalendar} from 'react-icons/ai'
 import emailjs from 'emailjs-com'
 import BasicModal from '../modal/BasicModal'
 
@@ -56,6 +57,8 @@ const Contact = () => {
           <input type='email' name='email' placeholder='Your Email' required />
           <input type='subject' name='subject' placeholder='Message Subject' required />
           <textarea name='message' rows='7' placeholder='Your Message' required />
+          <label>Using this form, you acknowledge and accept a significantly delayed response time 
+              relative to the options available at the right.</label>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
     );
@@ -67,7 +70,14 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className='container contact__container'>
+        
         <div className='contact__options'>
+        <article className='contact__option'>
+            <AiOutlineCalendar className='contact__option-icon'/>
+            <h4>Video Call</h4>
+            <h5>brandonrhayes</h5>
+            <a href="https://calendly.com/brandonrhayes/30" target="_blank" rel="noreferrer">Schedule a time</a>
+          </article>
           <article className='contact__option'>
             <AiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
@@ -82,7 +92,7 @@ const Contact = () => {
           </article>
         </div>
         {/*END OF CONTACT OPTIONS */}
-
+        
         <Form/>
 
         {open && <BasicModal 

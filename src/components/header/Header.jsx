@@ -19,7 +19,7 @@ const Header = () => {
             <img src={ME} className="me__img" alt="me" />
           </div>
 
-          <a href="#contact" className='scroll__down'><AiFillDownCircle/></a>
+          <a href="#contact" className='scroll__down'><AiFillDownCircle size={40}/></a>
           <HeaderSocials />
 
         </div>

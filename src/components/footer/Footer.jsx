@@ -16,8 +16,8 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><AiOutlineInstagram/></a>
-        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><AiFillTwitterSquare/></a>
+        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><AiOutlineInstagram  size={20}/></a>
+        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><AiFillTwitterSquare  size={20}/></a>
       </div>
 
       <div className="footer__copyright">
