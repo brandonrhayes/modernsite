@@ -58,7 +58,7 @@ const Contact = () => {
           <input type='subject' name='subject' placeholder='Message Subject' required />
           <textarea name='message' rows='7' placeholder='Your Message' required />
           <label>Using this form, you acknowledge and accept a significantly delayed response time 
-              relative to the options available at the right.</label>
+              relative to other options.</label>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
     );
