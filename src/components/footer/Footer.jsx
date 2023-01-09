@@ -1,7 +1,8 @@
 import React from 'react'
 import './footer.css'
-import {AiOutlineInstagram} from 'react-icons/ai'
-import {AiFillTwitterSquare} from 'react-icons/ai'
+import {FaInstagramSquare} from 'react-icons/fa'
+import {FaTwitterSquare} from 'react-icons/fa'
+import {FaGoodreads} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -16,8 +17,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><AiOutlineInstagram  size={20}/></a>
-        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><AiFillTwitterSquare  size={20}/></a>
+        
+        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagramSquare/></a>
+        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitterSquare/></a>
+        <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreads/></a>
       </div>
 
       <div className="footer__copyright">

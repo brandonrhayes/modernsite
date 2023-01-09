@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/brandon-nerd.JPG'
+import ME from '../../assets/images/brandon-nerd.JPG'
 import {FaAward} from 'react-icons/fa'
 import {AiOutlineTeam} from 'react-icons/ai'
 

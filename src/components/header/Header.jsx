@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/brandon-mountain.png' // brandon-nerd-transparent //brandon-mountain.png
+import ME from '../../assets/images/brandon-mountain.png' // brandon-nerd-transparent //brandon-mountain.png
 import HeaderSocials from './HeaderSocials'
 import {AiFillDownCircle} from 'react-icons/ai'
 

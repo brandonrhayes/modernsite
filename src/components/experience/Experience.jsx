@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import CV from '../../assets/Brandon Hayes - Lead Product Manager Tech Startup Winter 2022 v2.24.pdf'
+import CV from '../../assets/files/Brandon Hayes - Lead Product Manager Tech Startup Winter 2022 v2.24.pdf'
 
 const Experience = () => {
   return (
