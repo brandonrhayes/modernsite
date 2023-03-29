@@ -43,7 +43,7 @@ const About = () => {
                 Growing up, I enjoyed a simple life of playing in nature with friends along the water I was blessed with.
                 But after a while, it grew stale. The exploration excited me- the adventure of exploring something new.
                 I was curious about everything, and that curiosity fueled my desire to learn; I wanted to become the best version of myself.
-                A version in which I could help everyone else do the same, so they can live their dream just like I'm so fortunate to do today</p>
+                A version in which I could help everyone else do the same, so they can live their dream just like I'm so fortunate to do today.</p>
           
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>
           </div>
