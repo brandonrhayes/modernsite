@@ -1,30 +1,16 @@
 import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Services from './components/services/Services'
-//import Portfolio from './components/portfolio/Portfolio'
-//import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import {  Route, Routes, BrowserRouter } from 'react-router-dom'
+import Home from './Home'
+import PageNotFound from './components/pagenotfound/PageNotFound'
 
-/*Removed experience for now
- <Experience />
-  <Portfolio />
-       <Testimonials />
-*/
 const App = () => {
   return (
-    <>
-       <Header />
-       <Nav />
-       <About />
-       <Experience />
-       <Services />
-       <Contact />
-       <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={ <Home/> } />
+        <Route path="*" element={ <PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -126,6 +126,24 @@ img {
     object-fit: cover;
 }
 
+.brandon__text {
+    width: 100%;
+    margin-top: 2rem;
+    background: linear-gradient(
+        180deg, 
+        transparent,
+        var(--color-white),
+        transparent
+    );
+}
+
+.brandon__text-image {
+    overflow: hidden;
+    transform: translate(0, 7rem);
+    transition: (var(--transition));
+}
+
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1024px) {
     .container {
@@ -145,5 +163,13 @@ img {
 
     section > h2 {
         margin-bottom: 2rem;
+    }
+
+    .brandon__text {
+     transform: translate(0, 9rem);
+    }
+    
+    .brandon__text-image {
+        transform: translate(0, 1rem);
     }
 }
