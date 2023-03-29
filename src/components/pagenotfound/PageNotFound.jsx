@@ -12,9 +12,7 @@ const PageNotFound= () =>{
                 <br></br>
                 <br></br>
 
-                <h4>It's okay. Every explorer gets lost sometimes.</h4>
-                
-                <br></br>
+                <h4>It's okay. Every explorer gets lost at times...</h4>
                 <br></br>
                 <Link to='/'>Take Me Home</Link>
         </header>

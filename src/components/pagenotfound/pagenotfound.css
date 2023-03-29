@@ -8,3 +8,11 @@ header {
 h1 {
     color: var(--color-white);
 }
+
+h3 {
+    color:var(--color-light)
+}
+
+h4 {
+    color:var(--color-white)
+}

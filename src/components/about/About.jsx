@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/images/brandon-nerd.JPG'
-import {FaAward} from 'react-icons/fa'
-import {AiOutlineTeam} from 'react-icons/ai'
+//import {FaAward} from 'react-icons/fa'
+//import {AiOutlineTeam} from 'react-icons/ai'
 
 const About = () => {
   return (

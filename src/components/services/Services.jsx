@@ -1,6 +1,6 @@
 import React from 'react'
 import './services.css'
-import {AiOutlineCheck} from 'react-icons/ai'
+//import {AiOutlineCheck} from 'react-icons/ai'
 
 const Services = () => {
   return (

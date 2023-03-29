@@ -7,10 +7,10 @@ import {FaGoodreads} from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer id='footer'>
-      <a href="#" className='footer__logo'>Brandonrhayes</a>
+      <a href="/#" className='footer__logo'>Brandonrhayes</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="/#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="footer__socials">
         
         <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagramSquare/></a>
-        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitterSquare/></a>
+        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noopener noreferrer"><FaTwitterSquare/></a>
         <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreads/></a>
       </div>
 

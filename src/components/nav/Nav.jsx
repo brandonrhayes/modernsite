@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <nav>
       <a 
-        href="#"
+        href="/#"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
       ><AiOutlineHome size={25}/></a>
