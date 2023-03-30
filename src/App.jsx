@@ -1,16 +1,20 @@
-import React from 'react'
-import {  Route, Routes, BrowserRouter } from 'react-router-dom'
-import Home from './Home'
-import PageNotFound from './components/pagenotfound/PageNotFound'
+import React from 'react';
+import {  
+  Route, 
+  Routes, 
+  HashRouter as Router
+} from 'react-router-dom';
+import Home from './Home';
+import PageNotFound from './components/pagenotfound/PageNotFound';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path='/' element={ <Home/> } />
-        <Route exact path="*" element={ <PageNotFound />} />
+        <Route exact path ='*' element={ <PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
