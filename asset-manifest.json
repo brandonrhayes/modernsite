@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe7f9c1.css",
-    "main.js": "/static/js/main.797c97fa.js",
+    "main.js": "/static/js/main.b09bd176.js",
     "static/media/brandon-mountain.png": "/static/media/brandon-mountain.84f6a0378187c893d521.png",
     "static/media/brandon-nerd.JPG": "/static/media/brandon-nerd.7c1efbc5ced1fabed4ea.JPG",
     "static/media/brandon-bg.jpg": "/static/media/brandon-bg.e4f3e88101a651527501.jpg",
     "static/media/Brandon Hayes - Lead Product Manager Tech Startup Winter 2023 v2.25_Online.pdf": "/static/media/Brandon Hayes - Lead Product Manager Tech Startup Winter 2023 v2.25_Online.92c542000709db741d3c.pdf",
     "index.html": "/index.html",
     "main.0fe7f9c1.css.map": "/static/css/main.0fe7f9c1.css.map",
-    "main.797c97fa.js.map": "/static/js/main.797c97fa.js.map"
+    "main.b09bd176.js.map": "/static/js/main.b09bd176.js.map"
   },
   "entrypoints": [
     "static/css/main.0fe7f9c1.css",
-    "static/js/main.797c97fa.js"
+    "static/js/main.b09bd176.js"
   ]
 }
