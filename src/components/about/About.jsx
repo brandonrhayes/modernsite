@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/images/brandon-nerd.JPG'
+import ME from '../../assets/images/Brandon-talk-data.JPG'
+import ME2 from '../../assets/images/brandon-nerd.JPG'
 //import {FaAward} from 'react-icons/fa'
 //import {AiOutlineTeam} from 'react-icons/ai'
 
@@ -8,8 +9,8 @@ const About = () => {
   return (
     <>
        <section id='about'>
-        <h5>Let me ease your curiousity with a little</h5>
-        <h2>About Me</h2>
+        <h5>I like the outdoors and making people smile...</h5>
+        <h2>More About Me</h2>
         
         <div className='container about__container'>
           <div className='about__me'>

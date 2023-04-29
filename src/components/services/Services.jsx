@@ -1,79 +1,104 @@
 import React from 'react'
 import './services.css'
-//import {AiOutlineCheck} from 'react-icons/ai'
+import {AiOutlineCheck} from 'react-icons/ai'
 
 const Services = () => {
   return (
     <section id='services'>
-      <h5>What I Offer</h5>
+      <h5>And I want to help you grow...</h5>
       <h2>Services</h2>
 
-      <p>Coming soon... Right now I'm out enjoying the mountains in beautiful Banff National Park, AB</p>
-
-      {/* <div className='container services__container'>
+      <div className='container services__container'>
         <article className='service'>
           <div className='service__head'>
-            <h3>UI/UX Design</h3>
+            <h3>Career Consulting</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Determining what to study</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Developing a post-education plan</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Setting & executing career goals</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Changing careers & becoming more</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Unlimited email discussions & consultations</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Limited phone calls & coffee chats</p>
             </li>
           </ul>
+
+          <div className='preaction'>
+            <h5>Starting at</h5>
+            <div className='sidebyside'>
+              <h2>$129.99 </h2>
+              <h6>per consultation</h6>
+            </div>
+          </div>
+
+          <div className='action'>
+            <a href="#contact" className='btn btn-primary'> Get Started</a>
+          </div>
+          
+
         </article>
         <article className='service'>
           <div className='service__head'>
-            <h3>Product Management</h3>
+            <h3>Product Management & Design</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>UI/UX design for mobile & desktop</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Product strategy & roadmapping</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Agile methodology coaching</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Stakeholder communication & documentation</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Team coaching, mentorship & support</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Unlimited phone discussions</p>
             </li>
           </ul>
+
+          <div className='preaction'>
+            <h5>Starting at</h5>
+            <div className='sidebyside'>
+              <h2>$213.00 </h2>
+              <h6>per billable hour</h6>
+            </div>
+          </div>
+
+          <div className='action'>
+            <a href="#contact"className='btn btn-primary'> Get Started</a>
+          </div>
+
         </article>
         <article className='service'>
           <div className='service__head'>
@@ -83,31 +108,44 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Designing high-performing teams</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Optimizing for stakeholder engagement</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Developing junior team members</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Fostering curiosity & growth mindsets</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Handling difficult team members</p>
             </li>
             <li>
               <AiOutlineCheck className='service__list-icon'/>
-              <p>kdsfkjdskfjkldsj sdjflkajdlf dskfska</p>
+              <p>Future proofing your team</p>
             </li>
           </ul>
+
+          <div className='preaction'>
+            <h5>Starting at</h5>
+            <div className='sidebyside'>
+              <h2>$257.00 </h2>
+              <h6>per billable hour</h6>
+            </div>
+          </div>
+
+          <div className='action'>
+            <a href="#contact" className='btn btn-primary'> Get Started</a>
+          </div>
+
         </article>
-      </div> */}
+      </div>
     </section>
   )
 }

@@ -4,6 +4,10 @@ import {FaInstagramSquare} from 'react-icons/fa'
 import {FaTwitterSquare} from 'react-icons/fa'
 import {FaGoodreads} from 'react-icons/fa'
 
+const getCurrentYear = () => {
+  return new Date().getFullYear();
+};
+
 const Footer = () => {
   return (
     <footer id='footer'>
@@ -24,7 +28,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Brandonrhayes. All rights resrved.</small>
+        <small>&copy; {getCurrentYear()} Brandonrhayes. All rights reserved.</small>
       </div>
     </footer>
   )

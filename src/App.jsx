@@ -12,7 +12,7 @@ const App = () => {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path='/' element={ <Home/> } />
-        <Route exact path ='*' element={ <PageNotFound />} />
+        <Route exact path ='/404' element={ <PageNotFound />} />
       </Routes>
     </Router>
   )
