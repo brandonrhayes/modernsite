@@ -22,7 +22,6 @@ const Header = () => {
 
           <a href="#contact" className='scroll__down'><AiFillDownCircle size={40}/></a>
           <HeaderSocials />
-
         </div>
       </header>
     </>

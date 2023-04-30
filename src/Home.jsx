@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/header/Header'
+import Particles from './components/header/Particles'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import BRANDONTEXT from './assets/images/brandon-bg.jpg'
@@ -19,6 +20,7 @@ import Footer from './components/footer/Footer'
 const Home = () => {
     return (
         <>
+           <Particles />
            <Header />
            <Nav />
            <About />
@@ -26,7 +28,7 @@ const Home = () => {
            <Services />
            <Contact />
            <div className='brandon__text'>
-            <img className='brandon__text-image' src={BRANDONTEXT} alt="Brandon" />
+              <img className='brandon__text-image' src={BRANDONTEXT} alt="Brandon" />
            </div>
            <Footer />
         </>
