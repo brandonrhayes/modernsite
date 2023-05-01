@@ -1,8 +1,8 @@
 import React, { useRef, useState, useReducer } from 'react'
 import './contact.css'
-import {AiOutlineMail} from 'react-icons/ai'
-import {AiOutlineInstagram} from 'react-icons/ai'
-import {AiOutlineCalendar} from 'react-icons/ai'
+import {FaEnvelope} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import {FaCalendarPlus} from 'react-icons/fa'
 import emailjs from 'emailjs-com'
 import BasicModal from '../modal/BasicModal'
 
@@ -73,19 +73,19 @@ const Contact = () => {
         
         <div className='contact__options'>
         <article className='contact__option'>
-            <AiOutlineCalendar className='contact__option-icon'/>
-            <h4>Video Call</h4>
-            <h5>brandonrhayes</h5>
+            <FaCalendarPlus className='contact__option-icon'/>
+            <h4>Visual Connection</h4>
+            <h5>Video or In-person</h5>
             <a href="https://calendly.com/brandonrhayes/30" target="_blank" rel="noreferrer">Schedule a time</a>
           </article>
           <article className='contact__option'>
-            <AiOutlineMail className='contact__option-icon'/>
+            <FaEnvelope className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>hello@brandonrhayes.com</h5>
-            <a href="mailto:hello@brandonrhayes.com" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="mailto:hello@brandonrhayes.com" target="_blank" rel="noreferrer">Drop a message</a>
           </article>
           <article className='contact__option'>
-            <AiOutlineInstagram className='contact__option-icon'/>
+            <FaInstagram className='contact__option-icon'/>
             <h4>Instagram</h4>
             <h5>brandonrhayes</h5>
             <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer">Send a DM</a>

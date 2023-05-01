@@ -1,10 +1,10 @@
 import { React, useState } from 'react'
 import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {AiOutlineBook} from 'react-icons/ai'
-import {AiOutlineDashboard} from 'react-icons/ai'
-import {AiOutlineMessage} from 'react-icons/ai'
+import {FaHome} from 'react-icons/fa'
+import {FaUserAstronaut} from 'react-icons/fa'
+import {FaUserGraduate} from 'react-icons/fa'
+import {FaUserTie} from 'react-icons/fa'
+import {FaCommentDots} from 'react-icons/fa'
 //import Tooltip from '@mui/material/Tooltip';
 
 
@@ -16,27 +16,27 @@ const Nav = () => {
         href="/#"
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
-      ><AiOutlineHome size={25}/></a>
+      ><FaHome size={25}/></a>
       <a 
         href="#about" 
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}
-      ><AiOutlineUser size={25}/></a>
+      ><FaUserAstronaut size={25}/></a>
       <a 
         href="#experience"
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}
-      ><AiOutlineBook size={25}/></a>
+      ><FaUserGraduate size={25}/></a>
       <a 
         href="#services"
         onClick={() => setActiveNav('#services')}
         className={activeNav === '#services' ? 'active' : ''}
-      ><AiOutlineDashboard size={25}/></a>
+      ><FaUserTie size={25}/></a>
       <a 
         href="#contact"
         onClick={()=> setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
-      ><AiOutlineMessage size={25}/></a>
+      ><FaCommentDots size={25}/></a>
 
     </nav>
   )

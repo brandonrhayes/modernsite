@@ -3,7 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/images/brandon-mountain.png' // brandon-nerd-transparent //brandon-mountain.png
 import HeaderSocials from './HeaderSocials'
-import {AiFillDownCircle} from 'react-icons/ai'
+// import {FaCommentDots} from 'react-icons/fa'
 
 const Header = () => {
   return (
@@ -20,7 +20,7 @@ const Header = () => {
             <img src={ME} className="me__img" alt="me" />
           </div>
 
-          <a href="#contact" className='scroll__down'><AiFillDownCircle size={40}/></a>
+          {/* <a href="#contact" className='scroll__down'><FaCommentDots size={35}/></a> */}
           <HeaderSocials />
         </div>
       </header>

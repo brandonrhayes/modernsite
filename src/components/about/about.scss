@@ -44,12 +44,12 @@
 .about__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
     gap: 1.5rem;
 }
 
 .about__card {
     background: var(--color-bg-variant);
-    border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -57,7 +57,7 @@
 
 .about__card:hover {
     background: transparent;
-    border: var(--color-primary-variant);
+    border: 1px var(--color-bg-variant);
     cursor: default;
 }
 
@@ -76,9 +76,91 @@
     color: var(--color-light);
 }
 
+.about__content {
+    display: grid;
+    place-items: center;
+}
+
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+}
+
+* {box-sizing: border-box;}
+
+body {
+    background-color: var(--color-bg); 
+    color: var(--color-white);
+}
+
+// header {
+//   background-color: rgba(var(--color-bg),.5);
+//   font-size: 1.5em;
+//   text-align: center;
+//   padding: 1em;
+// }
+
+.panel-wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  max-height: 1000px;
+}
+
+.btn2 {
+    color: var(--color-white);
+    background: transparent;
+    border-color: transparent;
+    width: max-content;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+    font-size: 0.5 rem;
+}
+
+.btn2:hover {
+    color: var(--color-primary);
+    border-color: transparent;
+}
+
+.show, .hide {
+  position: absolute;
+  bottom: .25rem;
+  z-index: 100;
+  text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .panel {
+   max-height: 900px; 
+}
+.show:target ~ .fade {
+  margin-top: 0;
+}
+
+.panel {
+  position: relative;
+  margin: 2em auto;
+  width: 90%;
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+
+.fade {
+  background: linear-gradient(to bottom, rgba(31, 31, 56, 0) 25%,rgba(31, 31, 56, 1) 75%);
+  height: 300px;
+  width: 100%;
+  margin-top: -300px;
+  position: relative;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
@@ -113,6 +195,7 @@
 
     .about__content {
         text-align: center;
+        
     }
 
     .about__content p{

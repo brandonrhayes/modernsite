@@ -1,8 +1,12 @@
 import React from 'react'
+import Tooltip from '@mui/material/Tooltip';
 import './footer.css'
-import {FaInstagramSquare} from 'react-icons/fa'
-import {FaTwitterSquare} from 'react-icons/fa'
-import {FaGoodreads} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
+import {FaGoodreadsG} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
+import {FaPaypal} from 'react-icons/fa'
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
@@ -16,15 +20,19 @@ const Footer = () => {
       <ul className='permalinks'>
         <li><a href="/#">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#services">Experience</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div className="footer__socials">
+        <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer"><FaLinkedinIn size={15}/></a>
+        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagram size={15}/></a>
+        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitter size={15}/></a>
+        <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreadsG size={15}/></a>
+        <a href="https://www.github.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGithub size={15}/></a>
+        <a href="https://paypal.me/brandonrhayes" target="_blank" rel="noreferrer"><FaPaypal size={15}/></a>
         
-        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagramSquare/></a>
-        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noopener noreferrer"><FaTwitterSquare/></a>
-        <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreads/></a>
       </div>
 
       <div className="footer__copyright">

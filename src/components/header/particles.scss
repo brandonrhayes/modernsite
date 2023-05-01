@@ -11,7 +11,6 @@ body {
 
 body {
   background-color: var(--color-bg);
-  //background-color: #021027;
 }
 
 .container__bg {
@@ -35,7 +34,6 @@ body {
 .circle-container {
   $particleNum: 200;
   $particleColor: --var(color-primary);
-  //$particleColor: hsl(180, 100%, 80%);
 
   position: absolute;
   transform: translateY(-10vh);
@@ -48,9 +46,9 @@ body {
     border-radius: 50%;
     mix-blend-mode: screen;
     background-image: radial-gradient(
-      hsl(180, 100%, 80%),
-      hsl(180, 100%, 80%) 10%,
-      hsla(180, 100%, 80%, 0) 56%
+      hsl(205, 100%, 65%),
+      hsl(205, 100%, 65%) 10%,
+      hsla(205, 100%, 65%, 0.1) 56%
     );
 
     animation: fadein-frames 200ms infinite, scale-frames 2s infinite;

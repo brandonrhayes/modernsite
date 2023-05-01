@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 h4 {
@@ -148,10 +148,11 @@ img {
 
 
     mask-image: radial-gradient(
-    var(--color-bg) 0%,
-    var(--color-bg) 5%,
-    transparent 70%,
-    transparent
+        ellipse 80% 45%,
+        var(--color-bg) 5%,
+        var(--color-bg) 20%,
+        transparent 80%,
+        transparent
     );
 }
 
@@ -182,6 +183,14 @@ img {
     }
     
     .brandon__text-image {
-        transform: translate(0, 1rem);
+        transform: translate(0, 5rem);
+        
+            mask-image: radial-gradient(
+                ellipse 80% 55%,
+                var(--color-bg) 0%,
+                var(--color-bg) 15%,
+                transparent 80%,
+                transparent
+            );
     }
 }
