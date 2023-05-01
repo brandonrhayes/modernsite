@@ -1,5 +1,5 @@
 import React from 'react'
-//import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import './footer.css'
 import {FaInstagram} from 'react-icons/fa'
 import {FaLinkedinIn} from 'react-icons/fa'
@@ -26,16 +26,24 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        {/* <Tooltip title = 'Connect on LinkedIn'> */}
-        <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer"><FaLinkedinIn size={15}/></a>
-        {/* </Tooltip> */}
-       
-        <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagram size={15}/></a>
-        <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitter size={15}/></a>
-        <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreadsG size={15}/></a>
-        <a href="https://www.github.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGithub size={15}/></a>
-        <a href="https://paypal.me/brandonrhayes" target="_blank" rel="noreferrer"><FaPaypal size={15}/></a>
-        
+        <Tooltip className='tooltip' title = 'Connect on LinkedIn'>
+          <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer"><FaLinkedinIn size={15}/></a>
+        </Tooltip>
+        <Tooltip className='tooltip' title = 'Connect on Instagram'>
+          <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagram size={15}/></a>
+        </Tooltip>
+        <Tooltip className='tooltip' title = 'Connect on Twitter'>
+          <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitter size={15}/></a>
+        </Tooltip>
+        <Tooltip className='tooltip' title = 'My Reading List'>
+          <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreadsG size={15}/></a>
+        </Tooltip>
+        <Tooltip className='tooltip' title = 'My Developments'>
+          <a href="https://www.github.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGithub size={15}/></a>
+        </Tooltip>
+        <Tooltip className='tooltip' title = 'Pay Me'>
+          <a href="https://paypal.me/brandonrhayes" target="_blank" rel="noreferrer"><FaPaypal size={15}/></a>
+        </Tooltip>
       </div>
 
       <div className="footer__copyright">
