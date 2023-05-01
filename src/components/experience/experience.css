@@ -3,6 +3,8 @@ p {
     text-align: center;
 }
 
+
+
 /* ====================== CTA ====================== */
 .cta {
     margin-top: 2.5rem;
@@ -12,10 +14,22 @@ p {
     align-items: center;
 }
 
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
     .cta {
         flex-direction: column;
-        
+    }
+
+    .experience__container {
+        max-width: 70%;
+        margin: auto;
     }
 }

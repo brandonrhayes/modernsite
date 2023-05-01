@@ -6,7 +6,7 @@ import LinkedInBadge from './LinkedInBadge'
 const Experience = () => {
   return (
     //https://www.youtube.com/watch?app=desktop&v=G-Cr00UYokU
-    <section id='experience'>
+    <section id='experience' className='experience__container'>
       <h5>I happen to love learning...</h5>
       <h2>Experience</h2>
       <p>I'm all about efficiency...</p>

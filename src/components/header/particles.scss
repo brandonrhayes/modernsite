@@ -100,7 +100,7 @@ body {
 
       @keyframes #{$framesName} {
         from {
-          transform: translate3d(random(100) + vw, $startPositionY + vh, 0);
+          transform: translate3d(random(100) + vw, $startPositionY - 110vh, 0);
         }
 
         to {
