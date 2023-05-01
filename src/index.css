@@ -169,6 +169,10 @@ img {
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
     .container {
         width: var(--container-width-sm);
     }
