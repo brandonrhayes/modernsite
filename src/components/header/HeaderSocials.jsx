@@ -21,11 +21,11 @@ const HeaderSocials = () => {
         <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitter size={35}/></a>
       </Tooltip>
 
-      <Tooltip className='tooltip' title = 'Checkout what Brandon is Reading'>
+      <Tooltip className='tooltip' title = 'See what Brandon is reading'>
         <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreadsG size={35}/></a>
       </Tooltip>
 
-      <Tooltip className='tooltip' title = 'Checkout what Brandon has been Developing'>
+      <Tooltip className='tooltip' title = 'See what Brandon has been developing'>
         <a href="https://www.github.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGithub size={35}/></a>
       </Tooltip>
     </div>

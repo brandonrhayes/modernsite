@@ -35,13 +35,13 @@ const Footer = () => {
         <Tooltip className='tooltip' title = 'Connect on Twitter'>
           <a href="https://twitter.com/brandonrhayes" target="_blank" rel="noreferrer"><FaTwitter size={15}/></a>
         </Tooltip>
-        <Tooltip className='tooltip' title = 'My Reading List'>
+        <Tooltip className='tooltip' title = 'See what Brandon is reading'>
           <a href="https://www.goodreads.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGoodreadsG size={15}/></a>
         </Tooltip>
-        <Tooltip className='tooltip' title = 'My Developments'>
+        <Tooltip className='tooltip' title = 'See what Brandon has been developing'>
           <a href="https://www.github.com/brandonrhayes" target="_blank" rel="noreferrer"><FaGithub size={15}/></a>
         </Tooltip>
-        <Tooltip className='tooltip' title = 'Pay Me'>
+        <Tooltip className='tooltip' title = 'Pay Brandon'>
           <a href="https://paypal.me/brandonrhayes" target="_blank" rel="noreferrer"><FaPaypal size={15}/></a>
         </Tooltip>
       </div>
