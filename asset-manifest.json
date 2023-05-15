@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.551d9be0.css",
+    "main.css": "/static/css/main.242d92e4.css",
     "main.js": "/static/js/main.8345f72e.js",
     "static/media/brandon-mountain.png": "/static/media/brandon-mountain.84f6a0378187c893d521.png",
     "static/media/brandon-nerd.JPG": "/static/media/brandon-nerd.7c1efbc5ced1fabed4ea.JPG",
     "static/media/Brandon-talk-data.JPG": "/static/media/Brandon-talk-data.d08cdcd1b75c188964f9.JPG",
     "static/media/brandon-bg2.jpg": "/static/media/brandon-bg2.1367fb6e8038bc130b9e.jpg",
     "index.html": "/index.html",
-    "main.551d9be0.css.map": "/static/css/main.551d9be0.css.map",
+    "main.242d92e4.css.map": "/static/css/main.242d92e4.css.map",
     "main.8345f72e.js.map": "/static/js/main.8345f72e.js.map"
   },
   "entrypoints": [
-    "static/css/main.551d9be0.css",
+    "static/css/main.242d92e4.css",
     "static/js/main.8345f72e.js"
   ]
 }
