@@ -1,7 +1,6 @@
 import React from 'react'
 import './about.scss'
 import ME from '../../assets/images/Brandon-talk-data.JPG'
-import ME2 from '../../assets/images/brandon-nerd.JPG'
 import {FaUserNinja} from 'react-icons/fa'
 import {FaUserSecret} from 'react-icons/fa'
 import {FaUsers} from 'react-icons/fa'

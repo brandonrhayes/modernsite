@@ -53,16 +53,20 @@ header {
     width: 22rem;
     height: 25rem;
     position: absolute;
-    left: calc(50% - 11rem);
     margin-top: 4rem;
+    left: calc(50% - 11rem);
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
 }
 
-.me__img {
-    position: absolute;
-    bottom: 0;
-    padding: 5rem 0.5rem 0;
+.image-container img {
+    margin-top: 4rem;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+  }
+  
+.image-container:hover img {
+    margin-top: 4rem;
+    transform: scale(1.2); /* Increase the size of the image on hover */
 }
 
 /* ====================== ME ====================== */

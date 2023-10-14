@@ -1,11 +1,10 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import ME from '../../assets/images/brandon-mountain.png' // brandon-nerd-transparent //brandon-mountain.png
-import HeaderSocials from './HeaderSocials'
-// import {FaCommentDots} from 'react-icons/fa'
+import './header.css';
+import CTA from './CTA';
+import HeaderSocials from './HeaderSocials';
+import ImageSwitcher from './ImageSwitcher';
 
 const Header = () => {
+
   return (
     <>
       <header>
@@ -17,11 +16,11 @@ const Header = () => {
           <CTA />
 
           <div className="me">
-            <img src={ME} className="me__img" alt="me" />
+            <ImageSwitcher />
           </div>
 
-          {/* <a href="#contact" className='scroll__down'><FaCommentDots size={35}/></a> */}
           <HeaderSocials />
+
         </div>
       </header>
     </>
