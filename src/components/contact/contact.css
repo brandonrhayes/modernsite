@@ -39,6 +39,27 @@
     font-size: 0.8rem;
 }
 
+.header__contact__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+
+.header__contact__socials a {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.header__contact__socials a :hover {
+    color: var(--color-primary);
+}
+
 /* ================ FORM ================ */
 form {
     display: flex;

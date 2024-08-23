@@ -1,12 +1,40 @@
 import React from 'react'
 import './about.scss'
-import ME from '../../assets/images/Brandon-talk-data.JPG'
+import ME from '../../assets/images/li-headshot.jpg'
 import {FaUserNinja} from 'react-icons/fa'
 import {FaUserSecret} from 'react-icons/fa'
 import {FaUsers} from 'react-icons/fa'
 
+function calculateYearsBetween(pastDate) {
+  const today = new Date();
+  const past = new Date(pastDate);
+
+  // Calculate the difference in years
+  let years = today.getFullYear() - past.getFullYear();
+
+  // Adjust if the current month and day are before the past month and day
+  const isBefore = 
+    today.getMonth() < past.getMonth() ||
+    (today.getMonth() === past.getMonth() && today.getDate() < past.getDate());
+
+  if (isBefore) {
+    years--;
+  }
+
+  return years;
+}
+
 
 const About = () => {
+  const PMDate = "2021/06/30"
+  const PMYears = calculateYearsBetween(PMDate);
+  const OrgLeadDate = "2017/05/01"
+  const OrgLeadYears = calculateYearsBetween(OrgLeadDate);
+  const LifeLeadDate = "2011/09/01"
+  const LifeLeadYears = calculateYearsBetween(LifeLeadDate);
+  const ProcImproveDate = "2016/09/01"
+  const ProcImprovYears = calculateYearsBetween(ProcImproveDate);
+
   return (
     <>
        <section id='about'>
@@ -25,19 +53,19 @@ const About = () => {
               <article className='about__card'>
                 <FaUserNinja className='about__icon'/>
                 <h5>Product Management</h5>
-                <small>2+ Years Creating Exceptional Products & Outstanding UXs</small>
+                <small>{PMYears}+ Years Creating Exceptional Products & Outstanding UXs</small>
               </article>
 
               <article className='about__card'>
                 <FaUsers className='about__icon'/>
                 <h5>Organizational Leadership</h5>
-                <small>5+ Years Leading to Excellence & 15+ Years Leading by Example</small>
+                <small>{OrgLeadYears}+ Years Leading to Excellence & {LifeLeadYears}+ Years Leading by Example</small>
               </article>
 
               <article className='about__card'>
                 <FaUserSecret className='about__icon'/>
                 <h5>Process Improvement</h5>
-                <small>6+ Years Devising Processes that make People Smile Profoundly</small>
+                <small>{ProcImprovYears}+ Years Devising Processes that make People Smile Profoundly</small>
               </article>
 
             </div>

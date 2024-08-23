@@ -6,8 +6,22 @@ import {FaCalendarPlus} from 'react-icons/fa'
 import emailjs from 'emailjs-com'
 import BasicModal from '../modal/BasicModal'
 
+import { styled } from '@mui/material/styles';
+import {FaLinkedinIn} from 'react-icons/fa'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+
 const Contact = () => {
   const form = useRef();
+
+  const DarkestTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#1F1F38',
+      color: '#FFF',
+      boxShadow: theme.shadows[1],
+    },
+  }));
 
   const [open, setOpen] = useState(false);
 
@@ -68,6 +82,15 @@ const Contact = () => {
     <section id='contact'>
       <h5>So, get in touch!</h5>
       <h2>Contact Me</h2>
+
+      <div className="footer__socials">
+        <DarkestTooltip title = 'Connect on LinkedIn'>
+          <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer"><FaLinkedinIn size={30}/></a>
+        </DarkestTooltip>
+        <DarkestTooltip title = 'Connect on Instagram'>
+          <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagram size={30}/></a>
+        </DarkestTooltip>
+      </div>
 
       <div className='container contact__container'>
         

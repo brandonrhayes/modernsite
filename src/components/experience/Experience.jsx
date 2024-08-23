@@ -1,5 +1,6 @@
 import React from 'react'
 import './experience.css'
+
 // import CV from '../../assets/files/Brandon Hayes - Lead Product Manager Tech Startup Winter 2023 v2.25_Online.pdf'
 // import LinkedInBadge from './LinkedInBadge'
 
@@ -15,6 +16,7 @@ const Experience = () => {
             <a href="#contact"> contact me</a> 
         </p>
 
+
         {/* <div className='linkedin'>
           <LinkedInBadge />
         </div> */}
@@ -24,10 +26,10 @@ const Experience = () => {
           for my latest experience.
         </p> */}
 
-        <div className="cta">
-          {/* <a href={CV} download className='btn'>Download CV</a> */}
+       {/* <div className="cta">
+          <a href={CV} download className='btn'>Download CV</a>
           <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer" className='btn'> Brandon's LinkedIn</a>
-        </div>
+        </div> */}
       </section>
     </div>
   )
