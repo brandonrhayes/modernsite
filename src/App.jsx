@@ -12,7 +12,8 @@ const App = () => {
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route exact path='/' element={ <Home/> } />
-        <Route exact path ='/404' element={ <PageNotFound />} />
+        {/* Catch-all */}
+        <Route path="*" element={ <PageNotFound />} />
       </Routes>
     </Router>
   )

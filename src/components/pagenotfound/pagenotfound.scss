@@ -1,0 +1,28 @@
+.page-notfound-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Content stays above the logo */
+.notfound-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Fixed logo truly stuck to viewport bottom-right */
+.notfound-logo {
+  position: fixed; /* anchored to viewport */
+  bottom: 0;
+  right: 0;
+  width: clamp(200px, 50vw, 500px);
+  opacity: 0.9;
+  z-index: 1;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, width 0.3s ease-in-out;
+}
