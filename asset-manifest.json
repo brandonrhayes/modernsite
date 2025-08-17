@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.86c5e971.css",
-    "main.js": "/static/js/main.04b0ed8d.js",
+    "main.css": "/static/css/main.4f24e55f.css",
+    "main.js": "/static/js/main.fbae6549.js",
+    "static/media/Safari Brandon.png": "/static/media/Safari Brandon.17339bd256b3beea56af.png",
     "static/media/brandon-mountain.png": "/static/media/brandon-mountain.84f6a0378187c893d521.png",
     "static/media/li-headshot.jpg": "/static/media/li-headshot.1dc6763d5b432b6adac9.jpg",
     "static/media/brandon-bg2.jpg": "/static/media/brandon-bg2.1367fb6e8038bc130b9e.jpg",
     "index.html": "/index.html",
-    "main.86c5e971.css.map": "/static/css/main.86c5e971.css.map",
-    "main.04b0ed8d.js.map": "/static/js/main.04b0ed8d.js.map"
+    "main.4f24e55f.css.map": "/static/css/main.4f24e55f.css.map",
+    "main.fbae6549.js.map": "/static/js/main.fbae6549.js.map"
   },
   "entrypoints": [
-    "static/css/main.86c5e971.css",
-    "static/js/main.04b0ed8d.js"
+    "static/css/main.4f24e55f.css",
+    "static/js/main.fbae6549.js"
   ]
 }
