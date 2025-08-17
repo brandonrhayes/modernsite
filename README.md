@@ -2,4 +2,4 @@
 
     This is my public site
 
-### `npm start`
+### `npm start` to run locally
