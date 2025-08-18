@@ -1,11 +1,10 @@
-import React from 'react'
-import './services.css'
+import './services.scss'
 import {AiOutlineCheck} from 'react-icons/ai'
 
 const Services = () => {
   return (
     <section id='services'>
-      <h5>And I want to help you grow...</h5>
+      <h5>And I want to help you grow</h5>
       <h2>Services</h2>
 
       <div className='container services__container'>
@@ -44,13 +43,13 @@ const Services = () => {
           <div className='preaction'>
             <h5>Starting at</h5>
             <div className='sidebyside'>
-              <h2>$129.99 </h2>
+              <h2>$129.99</h2>
               <h6>per consultation</h6>
             </div>
           </div>
 
           <div className='action'>
-            <a href="#contact" className='btn btn-primary'> Get Started</a>
+            <a href="#contact" className='btn btn-magical'> Get Started</a>
           </div>
           
 
@@ -90,13 +89,13 @@ const Services = () => {
           <div className='preaction'>
             <h5>Starting at</h5>
             <div className='sidebyside'>
-              <h2>$213.00 </h2>
+              <h2>$213.00</h2>
               <h6>per billable hour</h6>
             </div>
           </div>
 
           <div className='action'>
-            <a href="#contact"className='btn btn-primary'> Get Started</a>
+            <a href="#contact"className='btn btn-magical'> Get Started</a>
           </div>
 
         </article>
@@ -135,13 +134,13 @@ const Services = () => {
           <div className='preaction'>
             <h5>Starting at</h5>
             <div className='sidebyside'>
-              <h2>$257.00 </h2>
+              <h2>$257.00</h2>
               <h6>per billable hour</h6>
             </div>
           </div>
 
           <div className='action'>
-            <a href="#contact" className='btn btn-primary'> Get Started</a>
+            <a href="#contact" className='btn btn-magical'> Get Started</a>
           </div>
 
         </article>

@@ -25,23 +25,23 @@
     grid-template-columns: 70% 25%;
     gap: 5%;
     justify-content: center; // centers horizontally
-    align-items: center;     // centers vertically
-    text-align: center;      // optional: centers text inside
+    align-items: center; // centers vertically
+    text-align: center; // optional: centers text inside
     transition: transform 0.3s ease, background 0.3s ease;
 
     &:hover {
       transform: translateY(-0.5rem);
       box-shadow: 0 0 10px rgba(77, 181, 255, 0.2); /* stronger glow */
       color: var(--color-darkened-magical);
-      transform: scale(.99); /* subtle pop */
+      transform: scale(0.99); /* subtle pop */
       cursor: default;
     }
 
     &__who {
-      display: inline;           // use flexbox for alignment
+      display: inline; // use flexbox for alignment
       justify-content: center; // centers horizontally
-      align-items: center;     // centers vertically
-      text-align: center;      // optional: centers text inside
+      align-items: center; // centers vertically
+      text-align: center; // optional: centers text inside
     }
 
     &__avatar {
@@ -51,14 +51,13 @@
       object-fit: cover;
       margin-bottom: 1rem;
       border: 4px solid var(--color-bg-variant);
-      flex-shrink: 0;       /* prevents shrinking in flexbox */
+      flex-shrink: 0; /* prevents shrinking in flexbox */
       display: inline;
       align-items: center;
       justify-content: center;
-      background: var(--color-white);  /* optional: nice background for icon */
-      color: var(--color-bg-variant);          /* icon color */
+      background: var(--color-white); /* optional: nice background for icon */
+      color: var(--color-bg-variant); /* icon color */
     }
-
 
     &__name {
       font-weight: 700;
@@ -86,18 +85,18 @@
 
     &__source {
       display: inline-flex;
-      align-items: center;      // vertical center
-      gap: 0.25rem;             // space between icon and text
+      align-items: center; // vertical center
+      gap: 0.25rem; // space between icon and text
       font-size: 0.9rem;
       padding-top: 2rem;
       color: var(--color-light);
       max-width: 1;
 
       &.source-icon {
-        height: 1em;             // matches text height
-        width: auto;             // preserve aspect ratio
+        height: 1em; // matches text height
+        width: auto; // preserve aspect ratio
         display: inline-block;
-  }
+      }
     }
 
     &__text {
@@ -105,24 +104,23 @@
       line-height: 1.5;
       padding: 0rem;
       color: var(--color-white);
-      word-wrap: break-word;      // ensures long words wrap
-      overflow-wrap: break-word;  // fallback for older browsers
-      white-space: normal;        // allows text to wrap normally
+      word-wrap: break-word; // ensures long words wrap
+      overflow-wrap: break-word; // fallback for older browsers
+      white-space: normal; // allows text to wrap normally
 
-    p {
-    margin-bottom: 1rem;      // increases spacing between paragraphs
-    text-align: center;
-    }
-
+      p {
+        margin-bottom: 1rem; // increases spacing between paragraphs
+        text-align: center;
+      }
     }
   }
 
   &__nav {
     position: absolute;
     top: 50%;
-    left: -2rem;   // arrow outside left
-    right: -2rem;  // arrow outside right
-    width: calc(100% + 4rem); 
+    left: -2rem; // arrow outside left
+    right: -2rem; // arrow outside right
+    width: calc(100% + 4rem);
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -149,7 +147,6 @@
         color: var(--color-white);
         transform: scale(1.1);
       }
-      
     }
   }
 
@@ -175,7 +172,7 @@
   }
 }
 
-/* Mobile / Tablet Layout *//* Mobile / Tablet Layout */
+/* Mobile / Tablet Layout */ /* Mobile / Tablet Layout */
 @media screen and (max-width: 1024px) {
   .recommendations__track {
     display: flex;
@@ -187,8 +184,8 @@
 
   .recommendations__card {
     display: flex;
-    flex-direction: column;   
-    align-items: center;     // top align contents
+    flex-direction: column;
+    align-items: center; // top align contents
     justify-content: flex-start;
     flex: 0 0 80%;
     scroll-snap-align: start;
@@ -198,7 +195,7 @@
   }
 
   .recommendations__who {
-    order: -1;                
+    order: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +209,7 @@
     }
 
     &__name {
-      font-size: 1rem;   // ~16px
+      font-size: 1rem; // ~16px
       margin-bottom: 0.25rem;
     }
 
@@ -229,8 +226,8 @@
   }
 
   .recommendations__card__text {
-    order: 1;                 
-    font-size: 0.9rem;   // ~15px
+    order: 1;
+    font-size: 0.9rem; // ~15px
     line-height: 1.4;
     text-align: left;
     width: 100%;
@@ -251,7 +248,7 @@
   }
 
   .recommendations__nav {
-    display: none;            
+    display: none;
   }
 
   .recommendations__card__source {
@@ -287,6 +284,6 @@
   }
 
   .recommendations__card__text {
-    font-size: 0.85rem;  // slightly smaller body text for small phones
+    font-size: 0.85rem; // slightly smaller body text for small phones
   }
 }

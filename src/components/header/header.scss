@@ -1,0 +1,119 @@
+header {
+  height: 100vh;
+  min-height: max-content;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ====================== CTA ====================== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ====================== SOCIALS ====================== */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header__socials a {
+  size: 5rem;
+  color: var(--color-white);
+}
+
+.header__socials a :hover {
+  color: var(--color-primary);
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* ====================== ME ====================== */
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 30rem;
+  height: 35rem;
+  position: absolute;
+  margin-top: 6rem;
+  left: calc(50% - 15rem);
+  border-radius: 15rem 15rem 0 0;
+  overflow: hidden;
+}
+
+.image-container img {
+  margin-top: 2rem;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.image-container:hover img {
+  margin-top: 4rem;
+  transform: scale(1.2); /* Increase the size of the image on hover */
+}
+
+/* ====================== ME ====================== */
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  color: var(--color-white);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+@media screen and (max-width: 1200px) {
+  header {
+    padding-top: 3rem;
+    min-height: 725px;
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 800px) {
+  .header__container h1 {
+    font-size: 3rem;
+  }
+
+  .header__container h4 {
+    font-size: 0.9rem;
+  }
+
+  .me {
+    padding: 1rem 0.25rem 0;
+    height: 50vh;
+    width: 20rem;
+    height: 25rem;
+    margin-top: 8rem;
+    left: calc(50% - 10rem);
+    border-radius: 10rem 10rem 0 0;
+  }
+
+  .image-container img {
+    margin-top: 0.5rem;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}

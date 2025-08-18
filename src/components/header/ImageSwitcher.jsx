@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './header.css'
+import './header.scss'
 import ME from '../../assets/images/brandon-mountain.png'
 import ME_HOVER from "../../assets/images/brandon-mountain.png"
 

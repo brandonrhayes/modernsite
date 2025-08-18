@@ -1,133 +1,75 @@
-import React, { useRef, useState, useReducer } from 'react'
-import './contact.css'
-import {FaEnvelope} from 'react-icons/fa'
-import {FaInstagram} from 'react-icons/fa'
-import {FaCalendarPlus} from 'react-icons/fa'
-import emailjs from 'emailjs-com'
-import BasicModal from '../modal/BasicModal'
-
-import { styled } from '@mui/material/styles';
-import {FaLinkedinIn} from 'react-icons/fa'
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import "./contact.scss";
+import { FaPaperPlane } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaRegCalendarPlus } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
-  const form = useRef();
-
-  const DarkestTooltip = styled(({ className, ...props }) => (
-    <Tooltip {...props} classes={{ popper: className }} />
-  ))(({ theme }) => ({
-    [`& .${tooltipClasses.tooltip}`]: {
-      backgroundColor: '#1F1F38',
-      color: '#FFF',
-      boxShadow: theme.shadows[1],
-    },
-  }));
-
-  const [open, setOpen] = useState(false);
-
-  const modalReducer = (state, action) => {
-    switch (action.type) {
-      case "SUCCESS":
-        return {
-          header: 'Thank you',
-          content: 'Your message has been sent to Brandon.',
-          buttonText: 'Close'
-        }
-        
-      case "ERROR":
-        return {
-          header: 'Whoops...', 
-          content: 'Something went wrong. Your message has failed to send.',
-          buttonText: 'Try Again'
-        }
-      default:
-        throw new Error();
-    }
-  }
-  
-  const [modalState, modalDispatch] = useReducer (modalReducer, {
-    header: '',
-    content: '',
-    buttonText: ''
-  })
-
-  function Form() {
-    function handleSubmit(e) {
-      e.preventDefault();
-      emailjs.sendForm('service_sxxfleg', 'template_urw8pud', form.current, 'FisbNRwLM1hbUYXvo')
-        .then((result) => {
-          modalDispatch({type: "SUCCESS"})
-          setOpen(true)
-        }, (error) => {
-          modalDispatch("ERROR")
-          setOpen(true)
-      });
-      e.target.reset()
-    }
-  
-    return (
-      <form ref={form} onSubmit={handleSubmit}>
-          <input type='text' name='name' placeholder='Your Full Name' required />
-          <input type='email' name='email' placeholder='Your Email' required />
-          <input type='subject' name='subject' placeholder='Message Subject' required />
-          <textarea name='message' rows='7' placeholder='Your Message' required />
-          <label>Using this form, you acknowledge and accept a significantly delayed response time 
-              relative to other options.</label>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
-        </form>
-    );
-  }
-
   return (
-    <section id='contact'>
+    <section id="contact">
       <h5>So, get in touch!</h5>
       <h2>Contact Me</h2>
 
-      <div className="footer__socials">
-        <DarkestTooltip title = 'Connect on LinkedIn'>
-          <a href="https://linkedin.com/in/brandonrhayes" target="_blank" rel="noreferrer"><FaLinkedinIn size={30}/></a>
-        </DarkestTooltip>
-        <DarkestTooltip title = 'Connect on Instagram'>
-          <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer"><FaInstagram size={30}/></a>
-        </DarkestTooltip>
-      </div>
-
-      <div className='container contact__container'>
-        
-        <div className='contact__options'>
-        <article className='contact__option'>
-            <FaCalendarPlus className='contact__option-icon'/>
-            <h4>Visual Connection</h4>
+      <div className="container contact__container">
+        <a
+          href="https://calendar.app.google/vaMGsUzT3XQFZypj8"
+          target="_blank"
+          rel="noreferrer"
+          className="contact__option-link"
+        >
+          <article className="contact__option">
+            <FaRegCalendarPlus className="contact__option-icon" />
+            <h3>Schedule a Conversation</h3>
             <h5>Video or In-person</h5>
-            <a href="https://calendly.com/brandonrhayes/30" target="_blank" rel="noreferrer">Schedule a time</a>
+            <span className="contact__option-cta">Find a Time</span>
           </article>
-          <article className='contact__option'>
-            <FaEnvelope className='contact__option-icon'/>
-            <h4>Email</h4>
+        </a>
+
+        <a
+          href="mailto:hello@brandonrhayes.com"
+          target="_blank"
+          rel="noreferrer"
+          className="contact__option-link"
+        >
+          <article className="contact__option">
+            <FaPaperPlane className="contact__option-icon" />
+            <h3>Business Inquiries</h3>
             <h5>hello@brandonrhayes.com</h5>
-            <a href="mailto:hello@brandonrhayes.com" target="_blank" rel="noreferrer">Drop a message</a>
+            <span className="contact__option-cta">Email Me</span>
           </article>
-          <article className='contact__option'>
-            <FaInstagram className='contact__option-icon'/>
-            <h4>Instagram</h4>
+        </a>
+
+        <a
+          href="https://www.instagram.com/brandonrhayes"
+          target="_blank"
+          rel="noreferrer"
+          className="contact__option-link"
+        >
+          <article className="contact__option">
+            <FaInstagram className="contact__option-icon" />
+            <h3>Instagram</h3>
             <h5>brandonrhayes</h5>
-            <a href="https://www.instagram.com/brandonrhayes" target="_blank" rel="noreferrer">Send a DM</a>
+            <span className="contact__option-cta">DM Me</span>
           </article>
-        </div>
-        {/*END OF CONTACT OPTIONS */}
-        
-        <Form/>
+        </a>
 
-        {open && <BasicModal 
-                    handleClose={setOpen} 
-                    header={modalState.header} 
-                    content={modalState.content} 
-                    buttonText={modalState.buttonText}
-                  />}
-
+        <a
+          href="https://www.instagram.com/brandonrhayes"
+          target="_blank"
+          rel="noreferrer"
+          className="contact__option-link"
+        >
+          <article className="contact__option">
+            <FaLinkedinIn className="contact__option-icon" />
+            <h3>LinkedIn</h3>
+            <h5>brandonrhayes</h5>
+            <span className="contact__option-cta">Connect with Me</span>
+          </article>
+        </a>
       </div>
+      {/*END OF CONTACT OPTIONS */}
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
