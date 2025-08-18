@@ -21,7 +21,7 @@ import ChuckEllis from '../../assets/headshots/ChuckEllis.jpeg'
 export const recommendations = [
   {
     name: "Chuck Ellis",
-    role: "Chief Data Scientist, Cut+Dry Inc.",
+    role: "Chief Data Scientist @ Cut+Dry Inc.",
     date: "August 18, 2025",
     relationship: "Chuck was senior to Brandon but didn't manage directly",
     text: `I’ve been lucky enough to get to work closely with Brandon for nearly 3 years... [We] teamed up on product content, 
