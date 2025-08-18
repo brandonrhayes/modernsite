@@ -108,7 +108,7 @@
       word-wrap: break-word; // ensures long words wrap
       overflow-wrap: break-word; // fallback for older browsers
       white-space: normal; // allows text to wrap normally
-      scrollbar-width: thin;
+      scrollbar-width: none;
       scrollbar-color: var(--color-light) transparent;
 
       & p {

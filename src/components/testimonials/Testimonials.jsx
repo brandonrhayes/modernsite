@@ -1,8 +1,12 @@
 import "./testimonials.scss";
 import { useState, useRef, useEffect } from "react";
 import { recommendations } from "./recommendations.js";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import { FaLinkedin, FaCloudDownloadAlt } from "react-icons/fa";
+import {
+  FaAngleRight,
+  FaAngleLeft,
+  FaLinkedin,
+  FaCloudDownloadAlt,
+} from "react-icons/fa";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,23 +17,77 @@ const Testimonials = () => {
 
   // Measure card width dynamically including margin/gap
   useEffect(() => {
-    if (cardRef.current) {
+    if (cardRef.current && trackRef.current) {
       const style = getComputedStyle(cardRef.current);
       const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
       setCardWidth(cardRef.current.offsetWidth + gap);
     }
   }, [trackRef.current, cardRef.current, window.innerWidth]);
 
-  const prevSlide = () => {
+  const prevSlide = () =>
     setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));
-  };
-
-  const nextSlide = () => {
+  const nextSlide = () =>
     setCurrentIndex((prev) => (prev === total - 1 ? 0 : prev + 1));
-  };
+  const goToSlide = (index) => setCurrentIndex(index);
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
+  // Component for the scrollable text with dynamic fade
+  const RecommendationsText = ({ text }) => {
+    const textRef = useRef(null);
+    const [fadeStyle, setFadeStyle] = useState({
+      maskImage: "none",
+      WebkitMaskImage: "none",
+    });
+
+    const handleScroll = () => {
+      const el = textRef.current;
+      if (!el) return;
+
+      const scrollable = el.scrollHeight > el.clientHeight;
+      if (!scrollable) {
+        // No scroll → no fade
+        setFadeStyle({ maskImage: "none", WebkitMaskImage: "none" });
+        return;
+      }
+
+      const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
+      if (atBottom) {
+        // Remove fade completely when at bottom
+        setFadeStyle({ maskImage: "none", WebkitMaskImage: "none" });
+        return;
+      }
+
+      // Dynamically adjust fade based on scroll position
+      const scrollFraction = el.scrollTop / (el.scrollHeight - el.clientHeight);
+      const startPercent = 80 - scrollFraction * 50; // adjust fade start dynamically
+      const mask = `linear-gradient(to bottom, black ${startPercent}%, transparent 100%)`;
+
+      setFadeStyle({
+        WebkitMaskImage: mask,
+        maskImage: mask,
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskSize: "100% 100%",
+        maskSize: "100% 100%",
+      });
+    };
+
+    useEffect(() => handleScroll(), [text]);
+
+    return (
+      <div
+        ref={textRef}
+        className="recommendations__card__text"
+        onScroll={handleScroll}
+        style={fadeStyle}
+      >
+        {text
+          .trim()
+          .split("\n\n")
+          .map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
+      </div>
+    );
   };
 
   return (
@@ -57,16 +115,10 @@ const Testimonials = () => {
                 <div
                   className="recommendations__card"
                   key={index}
-                  ref={index === 0 ? cardRef : null} // only first card used for measuring
+                  ref={index === 0 ? cardRef : null}
                 >
-                  <div className="recommendations__card__text">
-                    {rec.text
-                      .trim()
-                      .split("\n\n")
-                      .map((p, idx) => (
-                        <p key={idx}>{p}</p>
-                      ))}
-                  </div>
+                  <RecommendationsText text={rec.text} />
+
                   <div className="recommendations__card__who">
                     {rec.avatar && (
                       <img
