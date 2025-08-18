@@ -1,9 +1,9 @@
-import React from 'react'
 import './about.scss'
 import ME from '../../assets/images/li-headshot.jpg'
 import {FaUserNinja} from 'react-icons/fa'
 import {FaUserSecret} from 'react-icons/fa'
 import {FaUsers} from 'react-icons/fa'
+import { paragraph } from './About_Me'
 
 function calculateYearsBetween(pastDate) {
   const today = new Date();
@@ -24,22 +24,37 @@ function calculateYearsBetween(pastDate) {
   return years;
 }
 
-
 const About = () => {
-  const PMDate = "2021/06/30"
+  const PMDate = "2020/06/30"
   const PMYears = calculateYearsBetween(PMDate);
-  const OrgLeadDate = "2017/05/01"
-  const OrgLeadYears = calculateYearsBetween(OrgLeadDate);
   const LifeLeadDate = "2011/09/01"
   const LifeLeadYears = calculateYearsBetween(LifeLeadDate);
-  const ProcImproveDate = "2016/09/01"
-  const ProcImprovYears = calculateYearsBetween(ProcImproveDate);
+  const ageDate ="1997/01/01"
+  const ageYears = calculateYearsBetween(ageDate);
 
   return (
     <>
-       <section id='about'>
-        <h5>I like the outdoors and making people smile...</h5>
-        <h2>About Me</h2>
+      <section id='about'>
+        <h5>Product Leader, Explorer, Builder, Stoic Thinker</h5>
+        <h2>Biography</h2>
+
+      <div className='container about__cards'>
+        <article className='about__card'>
+          <FaUsers className='icon'/>
+          <h5>Organizational Leadership</h5>
+          <small>{LifeLeadYears}+ years rallying teams to tackle wicked problems with grit, creativity, and excellence — delivering sticky, category-defining results.</small>
+        </article>
+        <article className='about__card'>
+          <FaUserNinja className='icon'/>
+          <h5>Product Management</h5>
+          <small>{PMYears}+ years crafting products people truly love — experiences that delight, fuel growth, and have unlocked $2M+ in new revenue with 10x adoption.</small>
+        </article>
+        <article className='about__card'>
+          <FaUserSecret className='icon'/>
+          <h5>Philosophy & Process</h5>
+          <small>{ageYears}+ years chasing clarity— rooted in integrity, driven by curiosity, guided by stoic calm— always seeking progress over perfection.</small>
+        </article>
+      </div>
         
         <div className='container about__container'>
           <div className='about__me'>
@@ -47,49 +62,13 @@ const About = () => {
               <img src={ME} alt="About Me" />
             </div>
           </div>
-
-          <div className='about__content'>
-            <div className='about__cards'>
-              <article className='about__card'>
-                <FaUserNinja className='about__icon'/>
-                <h5>Product Management</h5>
-                <small>{PMYears}+ Years Creating Exceptional Products & Outstanding UXs</small>
-              </article>
-
-              <article className='about__card'>
-                <FaUsers className='about__icon'/>
-                <h5>Organizational Leadership</h5>
-                <small>{OrgLeadYears}+ Years Leading to Excellence & {LifeLeadYears}+ Years Leading by Example</small>
-              </article>
-
-              <article className='about__card'>
-                <FaUserSecret className='about__icon'/>
-                <h5>Process Improvement</h5>
-                <small>{ProcImprovYears}+ Years Devising Processes that make People Smile Profoundly</small>
-              </article>
-
-            </div>
-
-            <div class="panel-wrapper">
-              <a href="#show" class="show btn2" id="show">Continue Reading</a> 
-              <a href="#hide" class="hide btn2" id="hide">Hide</a> 
-              <div class="panel">
-                <p>I was born and raised in a small town near the shoreline of Lake Huron, one of Canada's Great Lakes. Hearing the waves crash against the coast as the warm sand rippled between my toes was always something I took for granted. My simple life growing up led to many fond memories of adventures with friends, and I carry that simplicity into everything I do today. <br/><br/>
-
-                  But after a while, the familiar waters grew stale. It was the exploration that excited me. I needed something to challenge my fortitude while delivering the thrill of a new adventure. I was curious about everything, and that curiosity fueled my desire to learn; I wanted to become the best version of myself.<br/><br/> 
-
-                  Along my journey, I quickly realized that life's not all about me and being a better me. I discovered that life isn't much without others. And that led me to understand what I really wanted - my true purpose - was to inspire others as they chase their greatest dreams, just like I'm so fortunate to do today.<br/><br/>
-
-                  And I'm thankful I learned that lesson while young; life's not all about me and being a better me. We're social creatures, and we need others to be ourselves. So, while I love creating products and processes that improve the lives of others, I've realized one of my superior strengths is acting as a stabilizing force among others, one that can offer solid direction amid adversity. Simply put, I like making people smile.
-
-                  I'm always happy to chat about life, developing outstanding user experiences, high-performing teams, philosophy, self-improvement, big-picture ideas, and the great outdoors. I enjoy meeting new people, so let's talk!  <br/><br/>
-                  
-                  What inspires you to do what you do?
-                </p>
-              </div>
-              <div class="fade  fade-out"></div>
-            </div>  
-            <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <div className='continer paragraph'> {paragraph
+                .trim()
+                .split('\n\n')          // split by paragraph breaks
+                .map((p, idx) => (      // map each to a <p>
+                <p key={idx}>{p}</p>
+              ))}
+                <a href="#contact" className='btn btn-primary'>Let's Talk</a>
           </div>
         </div>
        </section>
