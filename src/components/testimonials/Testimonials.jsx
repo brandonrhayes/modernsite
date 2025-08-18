@@ -14,10 +14,11 @@ const Testimonials = () => {
   // Measure card width dynamically including margin/gap
   useEffect(() => {
     if (cardRef.current) {
+      const style = getComputedStyle(cardRef.current);
       const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
       setCardWidth(cardRef.current.offsetWidth + gap);
     }
-  }, []);
+  }, [trackRef.current, cardRef.current, window.innerWidth]);
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));

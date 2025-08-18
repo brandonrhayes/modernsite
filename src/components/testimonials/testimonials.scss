@@ -100,15 +100,18 @@
     }
 
     &__text {
+      max-height: 26rem;
+      overflow-y: auto;
       font-size: 0.95rem;
       line-height: 1.5;
-      padding: 0rem;
       color: var(--color-white);
       word-wrap: break-word; // ensures long words wrap
       overflow-wrap: break-word; // fallback for older browsers
       white-space: normal; // allows text to wrap normally
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-light) transparent;
 
-      p {
+      & p {
         margin-bottom: 1rem; // increases spacing between paragraphs
         text-align: center;
       }
@@ -199,10 +202,8 @@
     text-align: center;
 
     &__avatar {
-      padding-top: 1rem;
       width: 100px;
       height: 100px;
-      margin-bottom: 1rem;
     }
 
     &__name {
