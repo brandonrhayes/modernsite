@@ -14,9 +14,44 @@ import KevinKelly from '../../assets/headshots/kevin_kelly.jpeg'
 import OrieGood from '../../assets/headshots/OrieGood.jpeg'
 import recommendationFromOrieGood from '../../assets/files/LOR/Letter of Reference for Brandon Hayes by Orie Good.pdf'
 import recommendationFromMacKhamis from '../../assets/files/LOR/Mac Khamis - LoR for BH.pdf'
+import recommendationfromChuckEllis from '../../assets/files/LOR/Brandon_Hayes_LOR_081825 by Chuck Ellis CD.pdf'
+import ChuckEllis from '../../assets/headshots/ChuckEllis.jpeg'
 
 
 export const recommendations = [
+  {
+    name: "Chuck Ellis",
+    role: "Chief Data Scientist, Cut+Dry Inc.",
+    date: "August 18, 2025",
+    relationship: "Chuck was senior to Brandon but didn't manage directly",
+    text: `I’ve been lucky enough to get to work closely with Brandon for nearly 3 years... [We] teamed up on product content, 
+            eCommerce, manufacturer marketing, search, GPO strategy... [He] is the single most prolific and productive talent 
+            I have worked with in over 30 years of data strategy & development. Looked at in a different way, I’ve never known a colleague
+            with such relentless detail focus to also possess such a first-rate strategic intellect; nor have I ever known a top-tier 
+            strategist that could instantly jump into the muck and emerge with a fully-wrought service, app or feature set.
+            These are two ends of a wide spectrum, and it is Brandon’s essential gift.\n\n
+
+            Brandon was charged with developing a “Manufacturer Portal” to attract the participation– and revenue– of [brands], 
+            from small independents to the giant Conagra’s and Smucker’s of the industry. Not a lot of detail or even 
+            ideas how to do it. Brandon planned and executed a long series of ‘discovery sessions’ with all types of manufacturers, 
+            which enabled him to suss out demand and design a series of services attractive to this market. He then lobbied internally 
+            for the resources to build it all, was promised 2/3 of what he needed, was actually delivered only 1/3 of the original ask…
+            and yet 2 years later, over a thousand industry brand-owners now engage the Portal regularly, and many of those have now graduated 
+            to full paying clients.\n\n
+
+            When Cut+Dry landed its largest strategic deal to date, signing a long-term financing, distribution and co-marketing deal with a 
+            multi-billion-dollar industry player, the entire project was assigned to him, again with paltry resources and little in the way 
+            of specifics. It required deep data synchronization, elegant UI look and functionality, heavy reporting & analytics, and the 
+            always complicated delivery of real-time transaction integration... It took over 6 months of work at every
+            level to bring to market, yet what emerged is a well-built, highly functional and innately profitable eCommerce sub-system that 
+            will be contributing to Cut+Dry’s revenues for years to come. I’ve had the honor of writing dozens of [recommendations]
+            in my long career. It just turned out that this one is the most laudatory of all.
+`,
+    source: "Recommendation",
+    sourceType: "file",          // 'linkedin' or 'file'
+    sourceUrl: recommendationfromChuckEllis,
+    avatar: ChuckEllis
+  },
   {
     name: "Michael Sheng",
     role: "Software Engineer @ Cut+Dry",
@@ -38,7 +73,6 @@ export const recommendations = [
     sourceType: "linkedin",          // 'linkedin' or 'file'
     sourceUrl: "https://linkedin.com/in/brandonrhayes",
     avatar: Michael
-    
   },
   {
     name: "Mohamad Agha",

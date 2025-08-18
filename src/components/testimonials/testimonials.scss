@@ -192,9 +192,6 @@
     padding: 1rem;
     margin-right: 1rem;
     box-sizing: border-box;
-  }
-
-  .recommendations__who {
     order: -1;
     display: flex;
     flex-direction: column;
@@ -203,8 +200,8 @@
 
     &__avatar {
       padding-top: 1rem;
-      width: 90px;
-      height: 90px;
+      width: 100px;
+      height: 100px;
       margin-bottom: 1rem;
     }
 
@@ -261,29 +258,27 @@
   .recommendations__card {
     flex: 0 0 85%;
     padding: 0.75rem;
-  }
 
-  .recommendations__who {
     &__avatar {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
     }
 
     &__name {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     &__role {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
 
     &__relationship,
     &__date {
-      font-size: 0.7rem;
+      font-size: 0.5rem;
     }
   }
 
   .recommendations__card__text {
-    font-size: 0.85rem; // slightly smaller body text for small phones
+    font-size: 0.7rem; // slightly smaller body text for small phones
   }
 }
