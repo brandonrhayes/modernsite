@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7816911e.css",
-    "main.js": "/static/js/main.6c2bc2b7.js",
+    "main.css": "/static/css/main.00f6e2c3.css",
+    "main.js": "/static/js/main.5817285f.js",
     "static/media/Safari Brandon.png": "/static/media/Safari Brandon.17339bd256b3beea56af.png",
     "static/media/brandon-mountain.png": "/static/media/brandon-mountain.84f6a0378187c893d521.png",
     "static/media/li-headshot.jpg": "/static/media/li-headshot.1dc6763d5b432b6adac9.jpg",
@@ -9,6 +9,7 @@
     "static/media/brandon-bg2.jpg": "/static/media/brandon-bg2.1367fb6e8038bc130b9e.jpg",
     "static/media/Markus.jpeg": "/static/media/Markus.9c1b322d24ef563580d5.jpeg",
     "static/media/Letter of Reference for Brandon Hayes by Harry Hall.pdf": "/static/media/Letter of Reference for Brandon Hayes by Harry Hall.a4a39c918d26d70d0a0d.pdf",
+    "static/media/Brandon_Hayes_LOR_081825 by Chuck Ellis CD.pdf": "/static/media/Brandon_Hayes_LOR_081825 by Chuck Ellis CD.2a3457861c179b7158b5.pdf",
     "static/media/Kevin Kelly - Lor for BH.pdf": "/static/media/Kevin Kelly - Lor for BH.cc046b8f48c50a163e10.pdf",
     "static/media/Michael.jpeg": "/static/media/Michael.54a5261c421adc00c3e4.jpeg",
     "static/media/Letter of Reference for Brandon Hayes by Orie Good.pdf": "/static/media/Letter of Reference for Brandon Hayes by Orie Good.578886f57a89211b7907.pdf",
@@ -18,15 +19,16 @@
     "static/media/Akeshala.jpeg": "/static/media/Akeshala.5c2f32071a404e764f8f.jpeg",
     "static/media/Hal Fraser - LoR for BH.pdf": "/static/media/Hal Fraser - LoR for BH.dd6ed3089f83e1352c4c.pdf",
     "static/media/harryhall.jpeg": "/static/media/harryhall.dd5da2b4baf42b5b68e9.jpeg",
+    "static/media/ChuckEllis.jpeg": "/static/media/ChuckEllis.05346a2e326bb77bb0cb.jpeg",
     "static/media/kevin_kelly.jpeg": "/static/media/kevin_kelly.cee7d628843141948824.jpeg",
     "static/media/Mo.webp": "/static/media/Mo.9660f8bc790319c9abaa.webp",
     "static/media/Bogi.webp": "/static/media/Bogi.8bd2fc33d74f33191ae3.webp",
     "index.html": "/index.html",
-    "main.7816911e.css.map": "/static/css/main.7816911e.css.map",
-    "main.6c2bc2b7.js.map": "/static/js/main.6c2bc2b7.js.map"
+    "main.00f6e2c3.css.map": "/static/css/main.00f6e2c3.css.map",
+    "main.5817285f.js.map": "/static/js/main.5817285f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7816911e.css",
-    "static/js/main.6c2bc2b7.js"
+    "static/css/main.00f6e2c3.css",
+    "static/js/main.5817285f.js"
   ]
 }
