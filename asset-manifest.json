@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.214d7aad.css",
-    "main.js": "/static/js/main.5c40444c.js",
+    "main.css": "/static/css/main.043c9c8b.css",
+    "main.js": "/static/js/main.b942f03b.js",
     "static/media/Safari Brandon.png": "/static/media/Safari Brandon.17339bd256b3beea56af.png",
     "static/media/brandon-mountain.png": "/static/media/brandon-mountain.84f6a0378187c893d521.png",
     "static/media/li-headshot.jpg": "/static/media/li-headshot.1dc6763d5b432b6adac9.jpg",
+    "static/media/Lead Product Manager, Brandon Hayes - Resume V25.8.19.pdf": "/static/media/Lead Product Manager, Brandon Hayes - Resume V25.8.19.03146b50ebbbab3d46f1.pdf",
+    "static/media/BH Headshot 16Aug2025.JPG": "/static/media/BH Headshot 16Aug2025.d63715b5fb4848a6fb17.JPG",
     "static/media/Letter of Recommendation - Nancy Mattys.pdf": "/static/media/Letter of Recommendation - Nancy Mattys.706b0f167dcd23662887.pdf",
     "static/media/brandon-bg2.jpg": "/static/media/brandon-bg2.1367fb6e8038bc130b9e.jpg",
     "static/media/Markus.jpeg": "/static/media/Markus.9c1b322d24ef563580d5.jpeg",
@@ -21,14 +23,15 @@
     "static/media/harryhall.jpeg": "/static/media/harryhall.dd5da2b4baf42b5b68e9.jpeg",
     "static/media/ChuckEllis.jpeg": "/static/media/ChuckEllis.05346a2e326bb77bb0cb.jpeg",
     "static/media/kevin_kelly.jpeg": "/static/media/kevin_kelly.cee7d628843141948824.jpeg",
+    "static/media/linkedin-white.webp": "/static/media/linkedin-white.aca32e654d6d65bd76bc.webp",
     "static/media/Mo.webp": "/static/media/Mo.9660f8bc790319c9abaa.webp",
     "static/media/Bogi.webp": "/static/media/Bogi.8bd2fc33d74f33191ae3.webp",
     "index.html": "/index.html",
-    "main.214d7aad.css.map": "/static/css/main.214d7aad.css.map",
-    "main.5c40444c.js.map": "/static/js/main.5c40444c.js.map"
+    "main.043c9c8b.css.map": "/static/css/main.043c9c8b.css.map",
+    "main.b942f03b.js.map": "/static/js/main.b942f03b.js.map"
   },
   "entrypoints": [
-    "static/css/main.214d7aad.css",
-    "static/js/main.5c40444c.js"
+    "static/css/main.043c9c8b.css",
+    "static/js/main.b942f03b.js"
   ]
 }
