@@ -1,39 +1,39 @@
-import { useEffect } from 'react';
+import "./linkedinbadge.scss";
+import linkedinLogo from "../../assets/Logos/linkedin-white.webp";
+import headshot from "../../assets/headshots/BH Headshot 16Aug2025.JPG";
 
 const LinkedInBadge = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-    script.async = true;
-    script.defer = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
-    <div>
-        <div 
-            class="badge-base LI-profile-badge" 
-            data-locale="en_US" 
-            data-size="large" 
-            data-theme="dark" 
-            data-type="HORIZONTAL" 
-            data-vanity="brandonrhayes" 
-            data-version="v1"
-        >
-            <a 
-                class="badge-base__link LI-simple-link" 
-                href="https://ca.linkedin.com/in/brandonrhayes?trk=profile-badge"
-            >Brandon Hayes
-            </a>
+    <a
+      className="linkedin-badge"
+      href="https://ca.linkedin.com/in/brandonrhayes"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="top-header">
+        <div className="linkedin-badge__logo">
+          <img src={linkedinLogo} alt="LinkedIn" />
         </div>
-    </div>
+      </div>
+      <div className="linkedin-badge__info">
+        <img
+          src={headshot}
+          alt={"Brandon Smiling"}
+          className="linkedin-badge__headshot"
+        />
+        <div>
+          <div className="linkedin-badge__name">Brandon Hayes</div>
+          <div className="linkedin-badge__header">
+            Adventurer, Builder, Optimizer; but ultimately driven to inspire (Ex
+            Cut+Dry)
+          </div>
+          <div className="linkedin-badge__recents">
+            Cut+Dry | University of Waterloo
+          </div>
+        </div>
+      </div>
+    </a>
   );
-}
+};
 
 export default LinkedInBadge;
