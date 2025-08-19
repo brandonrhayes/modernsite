@@ -54,7 +54,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="https://www.instagram.com/brandonrhayes"
+          href="https://www.linkedin.com/in/brandonrhayes/"
           target="_blank"
           rel="noreferrer"
           className="contact__option-link"

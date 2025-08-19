@@ -6,6 +6,7 @@ import {
   FaAngleLeft,
   FaLinkedin,
   FaCloudDownloadAlt,
+  FaUserNinja,
 } from "react-icons/fa";
 
 const Testimonials = () => {
@@ -17,12 +18,17 @@ const Testimonials = () => {
 
   // Measure card width dynamically including margin/gap
   useEffect(() => {
-    if (cardRef.current && trackRef.current) {
-      const style = getComputedStyle(cardRef.current);
-      const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
-      setCardWidth(cardRef.current.offsetWidth + gap);
-    }
-  }, [trackRef.current, cardRef.current, window.innerWidth]);
+    const updateWidth = () => {
+      if (cardRef.current && trackRef.current) {
+        const gap = parseFloat(getComputedStyle(trackRef.current).gap) || 0;
+        setCardWidth(cardRef.current.offsetWidth + gap);
+      }
+    };
+
+    updateWidth(); // run once on mount
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []); // empty deps, refs are stable
 
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));
@@ -58,7 +64,7 @@ const Testimonials = () => {
 
       // Dynamically adjust fade based on scroll position
       const scrollFraction = el.scrollTop / (el.scrollHeight - el.clientHeight);
-      const startPercent = 80 - scrollFraction * 50; // adjust fade start dynamically
+      const startPercent = 90 - scrollFraction * 50; // adjust fade start dynamically
       const mask = `linear-gradient(to bottom, black ${startPercent}%, transparent 100%)`;
 
       setFadeStyle({
@@ -90,6 +96,25 @@ const Testimonials = () => {
     );
   };
 
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const handleScroll = () => {
+      if (window.innerWidth > 1024) return; // only mobile
+      const scrollLeft = track.scrollLeft;
+      const width = cardRef.current?.offsetWidth || 1;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      const fullWidth = width + gap;
+
+      const index = Math.round(scrollLeft / fullWidth);
+      setCurrentIndex(index);
+    };
+
+    track.addEventListener("scroll", handleScroll);
+    return () => track.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="recommendations">
       <section id="testimonials">
@@ -106,10 +131,14 @@ const Testimonials = () => {
             <div
               className="recommendations__track"
               ref={trackRef}
-              style={{
-                transform: `translateX(-${currentIndex * cardWidth}px)`,
-                transition: "transform 0.5s ease-in-out",
-              }}
+              style={
+                window.innerWidth > 1024
+                  ? {
+                      transform: `translateX(-${currentIndex * cardWidth}px)`,
+                      transition: "transform 0.5s ease-in-out",
+                    }
+                  : {}
+              }
             >
               {recommendations.map((rec, index) => (
                 <div
@@ -120,12 +149,16 @@ const Testimonials = () => {
                   <RecommendationsText text={rec.text} />
 
                   <div className="recommendations__card__who">
-                    {rec.avatar && (
+                    {rec.avatar ? (
                       <img
                         src={rec.avatar}
                         alt={rec.name}
                         className="recommendations__card__avatar"
                       />
+                    ) : (
+                      <div className="recommendations__card__avatar recommendations__card__avatar--fallback">
+                        <FaUserNinja />
+                      </div>
                     )}
                     <div className="recommendations__card__info">
                       <h4 className="recommendations__card__name">
