@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./nav.css";
 import { FaHome } from "react-icons/fa";
-import { FaUserAstronaut } from "react-icons/fa";
+import { FaUserAstronaut, FaHandHoldingHeart } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaCommentDots } from "react-icons/fa";
@@ -41,13 +41,22 @@ const Nav = () => {
           <FaUserAstronaut size={25} />
         </a>
       </LightTooltip>
+      <LightTooltip title="Experience">
+        <a
+          href="#experience"
+          onClick={() => setActiveNav("#experience")}
+          className={activeNav === "#experience" ? "active" : ""}
+        >
+          <FaUserGraduate size={25} />
+        </a>
+      </LightTooltip>
       <LightTooltip title="Testimonials">
         <a
           href="#testimonials"
           onClick={() => setActiveNav("#testimonials")}
           className={activeNav === "#testimonials" ? "active" : ""}
         >
-          <FaUserGraduate size={25} />
+          <FaHandHoldingHeart size={25} />
         </a>
       </LightTooltip>
       <LightTooltip title="Services">
