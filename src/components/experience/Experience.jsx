@@ -8,8 +8,7 @@ const Experience = () => {
     <div className="experience__container">
       <section id="experience">
         <h5>
-          Growth, Continuous Improvement, and a Lot of Data Consumption
-          (Reading)
+          A journey of growth, continuous improvement, and endless curiosity
         </h5>
         <h2>Experience</h2>
         <div className="experience-options">

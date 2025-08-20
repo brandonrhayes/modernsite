@@ -118,7 +118,7 @@ const Testimonials = () => {
   return (
     <div className="recommendations">
       <section id="testimonials">
-        <h5>I'll let the data talk</h5>
+        <h5>Our impact is best measured in the words of others</h5>
         <h2>Testimonials</h2>
 
         {/* Carousel Wrapper */}

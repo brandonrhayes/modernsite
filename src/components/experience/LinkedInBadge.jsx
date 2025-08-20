@@ -1,4 +1,4 @@
-import "./linkedinbadge.scss";
+import "./badge.scss";
 import linkedinLogo from "../../assets/Logos/linkedin-white.webp";
 import headshot from "../../assets/headshots/BH Headshot 16Aug2025.JPG";
 

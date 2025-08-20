@@ -1,4 +1,4 @@
-import "./linkedinbadge.scss";
+import "./badge.scss";
 import CV from "../../assets/files/Lead Product Manager, Brandon Hayes - Resume V25.8.19.pdf";
 import { FaFileDownload } from "react-icons/fa";
 

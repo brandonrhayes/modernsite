@@ -16,12 +16,33 @@ import recommendationFromOrieGood from '../../assets/files/LOR/Letter of Referen
 import recommendationFromMacKhamis from '../../assets/files/LOR/Mac Khamis - LoR for BH.pdf'
 import recommendationfromChuckEllis from '../../assets/files/LOR/Brandon_Hayes_LOR_081825 by Chuck Ellis CD.pdf'
 import ChuckEllis from '../../assets/headshots/ChuckEllis.jpeg'
+import HasithaS from '../../assets/headshots/HasithaS.jpeg'
+import Yumantha from '../../assets/headshots/Yumantha.jpeg'
 
 
 export const recommendations = [
   {
+    name: "Yumantha De Silva",
+    role: "Tech Lead @ Cut+Dry",
+    date: "August 17, 2025",
+    relationship: "Yumantha reported directly to Brandon",
+    text: `... Brandon brings a true product-first mindset, always encouraging the team to build for the future rather than just the
+            immediate need. He has the rare ability to manage multiple projects at once, handle customer relationships with ease, and 
+            keep the team motivated through open communication and a people-first approach. As an engineering lead, I found it incredibly
+            easy and rewarding to work with him—we spent countless hours collaborating closely, bridging the gaps between vision and
+            implementation, and fostering a strong product-first culture together.
+
+            Beyond his professional strengths, Brandon is also someone I genuinely enjoyed working with on a personal level. 
+            Our conversations, both about work and beyond, were always meaningful and enjoyable, and over time he became a good friend.
+            I would love the opportunity to work with him again and recommend him wholeheartedly as a product leader who elevates
+            both the product and the people around him.`,
+    source: "Recommendation",
+    sourceType: "linkedin",          // 'linkedin' or 'file'
+    sourceUrl: "https://linkedin.com/in/brandonrhayes",
+    avatar: Yumantha
+  },{
     name: "Chuck Ellis",
-    role: "Chief Data Scientist @ Cut+Dry Inc.",
+    role: "Chief Data Scientist, Co-Founder @ Cut+Dry Inc.",
     date: "August 18, 2025",
     relationship: "Chuck was senior to Brandon but didn't manage directly",
     text: `I’ve been lucky enough to get to work closely with Brandon for nearly 3 years... [We] teamed up on product content, 
@@ -51,6 +72,27 @@ export const recommendations = [
     sourceType: "file",          // 'linkedin' or 'file'
     sourceUrl: recommendationfromChuckEllis,
     avatar: ChuckEllis
+  },{
+    name: "Hasitha Senevirathne",
+    role: "Associate Product Manager @ Cut+Dry",
+    date: "August 17, 2025",
+    relationship: "Hasitha reported directly to Brandon",
+    text: `... [Brandon] became an incredible mentor, guiding me through my first major product launch. 
+            His ability to break down complex problems into clear, actionable steps while keeping the big picture in mind helped
+            me grow tremendously as a product manager. \n\n
+
+            Brandon taught me how to think like a product leader by showing me how to transform vague requirements into structured
+            roadmaps and teaching me to always dig deeper with strategic questioning to understand the "why" behind every decision.
+            Because of his coaching, I was able to confidently own an entire product vertical and lead cross-functional prioritization
+            discussions that directly shaped our product strategy. \n\n
+
+            What sets Brandon apart is his combination of strategic thinking and genuine investment in people development.
+            He created an environment where I felt safe to ask questions, make mistakes, and grow. His mentoring approach helped me
+             develop critical PM skills like stakeholder management, data-driven decision-making, and strategic communication...`,
+    source: "Recommendation",
+    sourceType: "linkedin",          // 'linkedin' or 'file'
+    sourceUrl: "https://linkedin.com/in/brandonrhayes",
+    avatar: HasithaS
   },
   {
     name: "Michael Sheng",
