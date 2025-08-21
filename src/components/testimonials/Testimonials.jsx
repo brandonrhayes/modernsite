@@ -119,7 +119,7 @@ const Testimonials = () => {
     <div className="recommendations">
       <section id="testimonials">
         <h5>Our impact is best measured in the words of others</h5>
-        <h2>Testimonials</h2>
+        <h2>Recommendations</h2>
 
         {/* Carousel Wrapper */}
         <div
