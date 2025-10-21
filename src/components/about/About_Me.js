@@ -1,20 +1,34 @@
-export const paragraph = `
-I grew up in Southwestern Ontario, Canada, where mornings began with “glass”—a perfectly still lake begging to be skied across. Simplicity defined those early years: waves crashing, sand in my Red Wings, and endless laughter with friends and family. It was a beautiful life, but not enough for a restless kid who wanted to understand the world—and push against it.
+export const paragraph = 
+`I grew up in Southwestern Ontario, Canada, where mornings began with "glass": a perfectly still lake begging to be skied across. Simplicity defined those early years. Waves crashing, sand in my Red Wings, endless laughter with friends and family. A beautiful life, yet something inside me refused to settle. It wasn't enough for a restless kid who wanted to understand the world, and push against it.
 
-That curiosity soon became my compass. I’ve chased adventures and built resilience in unusual ways: summiting Kilimanjaro just seven months after ACL surgery, driving a passenger train in Sri Lanka, triggering (and outrunning) an avalanche in the Rockies, and even sleeping in an igloo. Each challenge taught me what textbooks couldn’t: that grit, focus, and adaptability can turn the impossible into the inevitable. I learned that the mind is where everything begins—and if I could master that, I could shape far more than myself.
+That restlessness became fuel. I summited Kilimanjaro seven months after ACL surgery. I drove a passenger train through Sri Lanka. I triggered (and outran) an avalanche in the Rockies. I slept in an igloo. Each challenge taught me what classrooms never could: grit, focus, and adaptability turn the impossible into the inevitable.
 
-But it wasn’t all triumphs. In University, I thought I was untouchable—until I wasn’t. Weeks of unexplained illness left me weak, broken, and stripped of the confidence I once wore like armour. Losing 35 pounds sounds great—unless you’re a bodybuilder who was already lean. My body was failing, and for the first time, I realized how fragile I really was—and how much we all rely on each other.
+Master your mind, and you can shape far more than yourself.
 
-I felt alone.
-Helpless.
+Weeks of unexplained illness left me weak, broken, stripped of confidence in University.
+I uncontrollably lost 35 pounds; which sounds great, unless you're already a lean bodybuilder. 
+My body was failing. For the first time, I understood fragility. I understood how much we need each other.
+The diagnosis? A parasitic disease from the same waters I worshipped as a kid. 
+Nine weeks of suffering. Nine weeks that changed me more than any summit. 
+I walked out humbled, grounded, and with deep respect for the fragility we all share. 
 
-The diagnosis? A parasitic disease from the same waters I grew up worshipping. That season was nine weeks of hell. Yet it changed me more than any summit ever could. I walked out of it humbled, grounded, and with a deep respect for others. I learned that health is the foundation, connection is the lifeline, and strength often comes disguised as vulnerability.
+Health is the foundation. Connection is the lifeline. Strength often looks like vulnerability.
 
-Professionally, I’ve carried those lessons into product leadership. For several years, I’ve thrived in high-ambiguity, zero-to-one environments—scaling AI/ML-powered SaaS and marketplace platforms into multi-million-dollar successes. I specialize in product-led growth, multi-tenant B2B architecture, and solving wicked problems: complex, shifting challenges that demand both analytical rigour and empathy. But my favourite part isn’t the revenue or growth metrics—it’s seeing people thrive. Whether it’s through elegant product experiences, transparent processes, or teams funding clarity in chaos, I love unlocking human potential.
+Professionally, I've carried those lessons into product leadership. For several years, I've thrived in high-ambiguity, zero-to-one environments. I've scaled AI/ML-powered SaaS and marketplace platforms into multi-million-dollar successes.
 
-My philosophy is simple: clarity over noise, curiosity over comfort, authenticity over image. Stoicism keeps me grounded, though it requires daily practice. Radical honesty—especially with myself—keeps me moving forward. And the quirks I once thought of as flaws? They’ve become my competitive edge.
+I specialize in product-led growth, marketplace platforms with multi-tenant B2B architecture, and solving wicked problems: complex, shifting challenges that demand analytical rigor and empathy.
 
-Because success isn’t about titles or accolades. It’s measured by the impact we leave on people. That’s why I chase adventures, build products, and invest in others: because life is richer when we act boldly, reflect deeply, and lift each other along the way.
+My favorite part? Watching people thrive. 
+Elegant product experiences. Transparent processes. Teams finding clarity in chaos.
 
-If you’re building something new, exploring big ideas, or just looking for a meaningful conversation over coffee, let’s connect. I’d love to hear your story, too.
-`;
+This is what drives me. 
+
+My philosophy: clarity over noise, curiosity over comfort, authenticity over image. Stoicism keeps me grounded through daily practice with mediation and breathwork. Radical honesty (especially with myself) keeps me moving forward.
+
+The quirks I once thought were flaws? They're now my competitive edge. 
+
+Titles or accolades don't measure success. You measure success by the impact you leave on people. 
+
+I chase adventures, build products, and invest in others because life gets richer when you act boldly, reflect deeply, and lift each other along the way.
+
+If you're building something new, exploring big ideas, or looking for a conversation over coffee, let's connect. I want to hear your story, too.`;

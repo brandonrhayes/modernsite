@@ -14,10 +14,11 @@ const Header = () => {
           </h4>
           <h1>Brandon Hayes</h1>
           <h5 className="text-light">
-            Explorer • Builder • Optimizer • Eternal Learner
+            Explorer • Builder • Optimizer • Investor • Kaizen
           </h5>
           <h6 className="text-light">
-            Everything I do is meant to inspire, delight, and make an impact
+            I build with intent, always aiming to move people and the world
+            forward
           </h6>
           <CTA />
 

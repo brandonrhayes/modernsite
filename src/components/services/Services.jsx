@@ -4,148 +4,153 @@ import { AiOutlineCheck } from "react-icons/ai";
 const Services = () => {
   return (
     <section id="services">
-      <h5>Helping teams grow through clarity, strategy, and momentum</h5>
+      <h5>
+        Helping teams grow through clarity, strategy, and momentum from 0 to
+        scale
+      </h5>
       <h2>Services</h2>
 
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>Product & Design</h3>
+            <h3>AI/ML Product Strategy</h3>
           </div>
 
           <ul className="service__list">
+            <li>
+              <AiOutlineCheck className="service__list-icon" />
+              <p>AI product roadmap & achitecture design</p>
+            </li>
+            <li>
+              <AiOutlineCheck className="service__list-icon" />
+              <p>ML-powered feature development & scaling</p>
+            </li>
+            <li>
+              <AiOutlineCheck className="service__list-icon" />
+              <p>AI go-to-market strategy & adoption</p>
+            </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
               <p>UI/UX design for mobile & desktop</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Product strategy & roadmapping</p>
+              <p>Technical product requirements & documentation</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Agile methodology coaching</p>
-            </li>
-            <li>
-              <AiOutlineCheck className="service__list-icon" />
-              <p>Stakeholder communication & documentation</p>
-            </li>
-            <li>
-              <AiOutlineCheck className="service__list-icon" />
-              <p>Team coaching, mentorship & support</p>
-            </li>
-            <li>
-              <AiOutlineCheck className="service__list-icon" />
-              <p>Unlimited phone discussions</p>
+              <p>Model evaluation & prompt engineering</p>
             </li>
           </ul>
 
           <div className="preaction">
-            <h5>Starting at</h5>
+            <h5>Results-driven engagement</h5>
             <div className="sidebyside">
-              <h2>$213.00</h2>
-              <h6>per billable hour</h6>
+              <h2>$275.00</h2>
+              <h6>per hour*</h6>
             </div>
+            <h6>*custom pricing based on scope</h6>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Get Started
+              Start Conversation
             </a>
           </div>
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>Organizational Design</h3>
+            <h3>0→1 Product Leadership</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Designing high-performing teams</p>
+              <p>Building & launching new products from scratch</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Optimizing for stakeholder engagement</p>
+              <p>B2B SaaS & marketplace platform strategy</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Developing junior team members</p>
+              <p>Product-led growth & monetization models</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Fostering curiosity & growth mindsets</p>
+              <p>Multi-tenant architecture & scalability</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Handling difficult team members</p>
+              <p>Cross-functional team leadership & delivery</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Future proofing your team</p>
+              <p>Executive & team presentations</p>
             </li>
           </ul>
 
           <div className="preaction">
-            <h5>Starting at</h5>
+            <h5>Results-driven engagement</h5>
             <div className="sidebyside">
-              <h2>$257.00</h2>
-              <h6>per billable hour</h6>
+              <h2>$325.00</h2>
+              <h6>per hour*</h6>
             </div>
+            <h6>*custom pricing based on scope</h6>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Get Started
+              Start Conversation
             </a>
           </div>
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>Career Consulting</h3>
+            <h3>Product Advisory</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Determining what to study</p>
+              <p>Product strategy audits & optimization</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Developing a post-education plan</p>
+              <p>Revenue architecture & growth metrics</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Setting & executing career goals</p>
+              <p>Team structure & process design</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Changing careers & becoming more</p>
+              <p>PM mentorship & career development</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Unlimited email discussions & consultations</p>
+              <p>Go-to-market strategy for new verticals</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Limited phone calls & coffee chats</p>
+              <p>Partnership & platform integration strategy</p>
             </li>
           </ul>
 
           <div className="preaction">
-            <h5>Starting at</h5>
+            <h5>Flexible engagement</h5>
             <div className="sidebyside">
-              <h2>$129.99</h2>
-              <h6>per consultation</h6>
+              <h2>$250.00</h2>
+              <h6>per hour</h6>
             </div>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Get Started
+              Start Conversation
             </a>
           </div>
         </article>

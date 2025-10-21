@@ -25,7 +25,7 @@ const LinkedInBadge = () => {
           <div className="linkedin-badge__name">Brandon Hayes</div>
           <div className="linkedin-badge__header">
             Adventurer, Builder, Optimizer; but ultimately driven to inspire (Ex
-            Cut+Dry)
+            Wayfair)
           </div>
           <div className="linkedin-badge__recents">
             Cut+Dry | University of Waterloo

@@ -45,7 +45,7 @@ const About = () => {
             <h5>Organizational Leadership</h5>
             <small>
               {LifeLeadYears}+ years rallying teams to tackle wicked problems
-              with grit, creativity, and excellence — delivering sticky,
+              with grit, creativity, and excellence to deliver sticky,
               category-defining results.
             </small>
           </article>
@@ -53,16 +53,16 @@ const About = () => {
             <FaUserNinja className="icon" />
             <h5>Product Management</h5>
             <small>
-              {PMYears}+ years crafting products people truly love — experiences
-              that delight, fuel growth, and have unlocked $2M+ in new revenue
-              with 10x adoption.
+              {PMYears}+ years crafting products people truly love; or
+              experiences that delight, fuel growth, and have unlocked $2M+ in
+              new revenue with 10x adoption.
             </small>
           </article>
           <article className="about__card">
             <FaMagic className="icon" />
             <h5>Philosophy & Process</h5>
             <small>
-              {ageYears}+ years chasing clarity— rooted in integrity, driven by
+              {ageYears}+ years chasing clarity; rooted in integrity, driven by
               curiosity, guided by stoicism always seeking progress over
               perfection.
             </small>
