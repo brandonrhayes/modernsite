@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import "./nav.css";
 import { FaHome } from "react-icons/fa";
 import { FaUserAstronaut, FaHandHoldingHeart } from "react-icons/fa";
