@@ -13,7 +13,7 @@ const Services = () => {
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>AI/ML Product Strategy</h3>
+            <h3>Product Strategy</h3>
           </div>
 
           <ul className="service__list">
@@ -61,7 +61,7 @@ const Services = () => {
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>0→1 Product Leadership</h3>
+            <h3>0→1 Building</h3>
           </div>
 
           <ul className="service__list">

@@ -1,6 +1,6 @@
 import "./testimonials.scss";
 import { useState, useRef, useEffect } from "react";
-import { recommendations } from "./recommendations.js";
+import { testimonials } from "./testimonials.js";
 import {
   FaAngleRight,
   FaAngleLeft,
@@ -9,11 +9,11 @@ import {
   FaUserNinja,
 } from "react-icons/fa";
 
-const Testimonials = () => {
+const Recommendations = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const trackRef = useRef(null);
   const cardRef = useRef(null);
-  const total = recommendations.length;
+  const total = testimonials.length;
   const [cardWidth, setCardWidth] = useState(0);
 
   // Measure card width dynamically including margin/gap
@@ -140,7 +140,7 @@ const Testimonials = () => {
                   : {}
               }
             >
-              {recommendations.map((rec, index) => (
+              {testimonials.map((rec, index) => (
                 <div
                   className="recommendations__card"
                   key={index}
@@ -216,7 +216,7 @@ const Testimonials = () => {
 
         {/* Dots */}
         <div className="recommendations__dots">
-          {recommendations.map((_, index) => (
+          {testimonials.map((_, index) => (
             <span
               key={index}
               className={`recommendations__dots-dot ${
@@ -231,4 +231,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Recommendations;

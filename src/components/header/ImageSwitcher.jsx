@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import './header.scss'
-import ME from '../../assets/images/brandon-mountain.png'
-import ME_HOVER from "../../assets/images/brandon-mountain.png"
+import React, { useState } from "react";
+import "./header.scss";
+//import ME from '../../assets/images/brandon-mountain.png'
+//import ME_HOVER from "../../assets/images/brandon-mountain.png"
+import ME from "../../assets/images/Brandon_Mountain_Transparent.png";
+import ME_HOVER from "../../assets/images/Brandon_Mountain_Transparent.png";
 
 function ImageSwitcher() {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,9 +23,9 @@ function ImageSwitcher() {
       onMouseLeave={handleMouseLeave}
     >
       {isHovered ? (
-        <img src= { ME_HOVER } alt="Me with studio light on top of EEOR" />
+        <img src={ME_HOVER} alt="Me with studio light on top of EEOR" />
       ) : (
-        <img src= { ME } alt="Me on top of EEOR" />
+        <img src={ME} alt="Me on top of EEOR" />
       )}
     </div>
   );

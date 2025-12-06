@@ -20,27 +20,8 @@ import HasithaS from '../../assets/headshots/HasithaS.jpeg'
 import Yumantha from '../../assets/headshots/Yumantha.jpeg'
 
 
-export const recommendations = [
+export const testimonials = [
   {
-    name: "Yumantha De Silva",
-    role: "Tech Lead @ Cut+Dry",
-    date: "August 17, 2025",
-    relationship: "Yumantha reported directly to Brandon",
-    text: `... Brandon brings a true product-first mindset, always encouraging the team to build for the future rather than just the
-            immediate need. He has the rare ability to manage multiple projects at once, handle customer relationships with ease, and 
-            keep the team motivated through open communication and a people-first approach. As an engineering lead, I found it incredibly
-            easy and rewarding to work with him—we spent countless hours collaborating closely, bridging the gaps between vision and
-            implementation, and fostering a strong product-first culture together.
-
-            Beyond his professional strengths, Brandon is also someone I genuinely enjoyed working with on a personal level. 
-            Our conversations, both about work and beyond, were always meaningful and enjoyable, and over time he became a good friend.
-            I would love the opportunity to work with him again and recommend him wholeheartedly as a product leader who elevates
-            both the product and the people around him.`,
-    source: "Recommendation",
-    sourceType: "linkedin",          // 'linkedin' or 'file'
-    sourceUrl: "https://linkedin.com/in/brandonrhayes",
-    avatar: Yumantha
-  },{
     name: "Chuck Ellis",
     role: "Chief Data Scientist, Co-Founder @ Cut+Dry Inc.",
     date: "August 18, 2025",
@@ -72,6 +53,25 @@ export const recommendations = [
     sourceType: "file",          // 'linkedin' or 'file'
     sourceUrl: recommendationfromChuckEllis,
     avatar: ChuckEllis
+  },{
+    name: "Yumantha De Silva",
+    role: "Tech Lead @ Cut+Dry",
+    date: "August 17, 2025",
+    relationship: "Yumantha reported directly to Brandon",
+    text: `... Brandon brings a true product-first mindset, always encouraging the team to build for the future rather than just the
+            immediate need. He has the rare ability to manage multiple projects at once, handle customer relationships with ease, and 
+            keep the team motivated through open communication and a people-first approach. As an engineering lead, I found it incredibly
+            easy and rewarding to work with him—we spent countless hours collaborating closely, bridging the gaps between vision and
+            implementation, and fostering a strong product-first culture together.
+
+            Beyond his professional strengths, Brandon is also someone I genuinely enjoyed working with on a personal level. 
+            Our conversations, both about work and beyond, were always meaningful and enjoyable, and over time he became a good friend.
+            I would love the opportunity to work with him again and recommend him wholeheartedly as a product leader who elevates
+            both the product and the people around him.`,
+    source: "Recommendation",
+    sourceType: "linkedin",          // 'linkedin' or 'file'
+    sourceUrl: "https://linkedin.com/in/brandonrhayes",
+    avatar: Yumantha
   },{
     name: "Hasitha Senevirathne",
     role: "Associate Product Manager @ Cut+Dry",
