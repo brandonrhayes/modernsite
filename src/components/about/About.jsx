@@ -23,19 +23,19 @@ function calculateYearsBetween(pastDate) {
 }
 
 const About = () => {
-  const PMDate = "2020/06/30";
+  const PMDate = "2021/06/30";
   const PMYears = calculateYearsBetween(PMDate);
-  const LifeLeadDate = "2011/09/01";
+  const LifeLeadDate = "2013/09/01";
   const LifeLeadYears = calculateYearsBetween(LifeLeadDate);
-  const ageDate = "1997/01/01";
-  const ageYears = calculateYearsBetween(ageDate);
+  const coopDate = "2017/04/01";
+  const ageYears = calculateYearsBetween(coopDate);
 
   return (
     <>
       <section id="about">
         <h5>
-          Product Leader & Builder | Explorer of the World | Stoic & Strategic
-          Thinker | Optimizer of What Matters | Investor in Quality & Growth
+          Product Builder | World Explorer | Strategic (Stoic) Thinker |
+          Optimizer of What Matters | Investor in Quality & Growth
         </h5>
         <h2>Biography</h2>
 
@@ -44,27 +44,37 @@ const About = () => {
             <FaHandsHelping className="icon" />
             <h5>Organizational Leadership</h5>
             <small>
-              {LifeLeadYears}+ years rallying teams to tackle wicked problems
-              with grit, creativity, and excellence to deliver sticky,
-              category-defining results.
+              {LifeLeadYears}+ years building products and teams. Started on
+              warehouse floors in 2013. Learned operations affect every
+              decision. Led cross-functional teams of 6+ across Engineering,
+              Design, and Product. Shipped features from 200 to 100K+ users.
+              Presented strategy to hundreds of executives. Built products that
+              work for real people doing real work.
             </small>
           </article>
           <article className="about__card">
             <FaUserNinja className="icon" />
             <h5>Product Management</h5>
             <small>
-              {PMYears}+ years crafting products people truly love; or
-              experiences that delight, fuel growth, and have unlocked $2M+ in
-              new revenue with 10x adoption.
+              {PMYears}+ years shipping 0-to-1 products that generate revenue.
+              Built AdTech platform from zero to $2M+ revenue using a
+              single-digit share of company resources. Drove 9-figure GMV impact
+              through search redesign in 1 month. Shipped industry-first LLM
+              products with 90% adoption. Led 300+ user interviews. Specializing
+              in marketplace platforms, AI integration, and turning ambiguity
+              into traction.
             </small>
           </article>
           <article className="about__card">
             <FaMagic className="icon" />
-            <h5>Philosophy & Process</h5>
+            <h5>Systems & Operations</h5>
             <small>
-              {ageYears}+ years chasing clarity; rooted in integrity, driven by
-              curiosity, guided by stoicism always seeking progress over
-              perfection.
+              {ageYears}+ years automating processes and scaling platforms.
+              Automated timesheet systems saving 50%+ staff time. Reduced defect
+              rates 60% through design systems. Architected platform primitives
+              (RBAC, feature flags, dynamic schemas) scaling from 1 template to
+              10K+ customized requirements. Built scalable systems because I
+              know what breaks when things grow.
             </small>
           </article>
         </div>
