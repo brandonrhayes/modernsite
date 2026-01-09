@@ -44,12 +44,12 @@ const About = () => {
             <FaHandsHelping className="icon" />
             <h5>Organizational Leadership</h5>
             <small>
-              {LifeLeadYears}+ years building products and teams. Started on
-              warehouse floors in 2013. Learned operations affect every
-              decision. Led cross-functional teams of 6+ across Engineering,
-              Design, and Product. Shipped features from 200 to 100K+ users.
-              Presented strategy to hundreds of executives. Built products that
-              work for real people doing real work.
+              {LifeLeadYears}+ years building products and teams. Led teams of
+              6+ shipping products that scaled from 200 to 100K+ users.
+              Presented platform strategy to hundreds of executives, directly
+              funding roadmap. Started on warehouse floors in 2013, funded my
+              education through operations. Every product decision I make
+              accounts for people doing real work.
             </small>
           </article>
           <article className="about__card">
@@ -70,11 +70,11 @@ const About = () => {
             <h5>Systems & Operations</h5>
             <small>
               {ageYears}+ years automating processes and scaling platforms.
-              Automated timesheet systems saving 50%+ staff time. Reduced defect
-              rates 60% through design systems. Architected platform primitives
-              (RBAC, feature flags, dynamic schemas) scaling from 1 template to
-              10K+ customized requirements. Built scalable systems because I
-              know what breaks when things grow.
+              Architected platform primitives (RBAC, feature flags, dynamic
+              schemas) scaling from 1 template to 10K+ requirements. Reduced
+              defect rates 60% through design systems. Automated processes
+              saving 50%+ staff time. Built systems that scale because I know
+              what breaks when products grow.
             </small>
           </article>
         </div>
