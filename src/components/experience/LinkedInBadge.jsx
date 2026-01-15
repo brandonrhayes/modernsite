@@ -1,6 +1,6 @@
 import "./badge.scss";
 import linkedinLogo from "../../assets/Logos/linkedin-white.webp";
-import headshot from "../../assets/headshots/BH Headshot 16Aug2025.JPG";
+import headshot from "../../assets/headshots/LinkedIn Headshot.PNG";
 
 const LinkedInBadge = () => {
   return (
@@ -24,8 +24,8 @@ const LinkedInBadge = () => {
         <div>
           <div className="linkedin-badge__name">Brandon Hayes</div>
           <div className="linkedin-badge__header">
-            Adventurer, Builder, Optimizer; but ultimately driven to inspire (Ex
-            Wayfair)
+            Lead Product Manager | Marketplaces, AI/LLM Products, B2B SaaS
+            Platforms | Ex-Wayfair, Startups
           </div>
           <div className="linkedin-badge__recents">
             Cut+Dry | University of Waterloo

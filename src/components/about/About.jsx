@@ -45,11 +45,11 @@ const About = () => {
             <h5>Organizational Leadership</h5>
             <small>
               {LifeLeadYears}+ years building products and teams. Led teams of
-              6+ shipping products that scaled from 200 to 100K+ users.
-              Presented platform strategy to hundreds of executives, directly
-              funding roadmap. Started on warehouse floors in 2013, funded my
-              education through operations. Every product decision I make
-              accounts for people doing real work.
+              20+ shipping products that scaled 500x. Presented platform
+              strategy to hundreds of executives, directly funding roadmap.
+              Started on warehouse floors in 2013, funded my education through
+              operations. Every product decision I make accounts for people
+              doing real work.
             </small>
           </article>
           <article className="about__card">
@@ -57,12 +57,11 @@ const About = () => {
             <h5>Product Management</h5>
             <small>
               {PMYears}+ years shipping 0-to-1 products that generate revenue.
-              Built AdTech platform from zero to $2M+ revenue using a
-              single-digit share of company resources. Drove 9-figure GMV impact
-              through search redesign in 1 month. Shipped industry-first LLM
-              products with 90% adoption. Led 300+ user interviews. Specializing
-              in marketplace platforms, AI integration, and turning ambiguity
-              into traction.
+              Built AdTech platform from zero to $2M+ revenue. Drove 9-figure
+              GMV impact through search redesign in 1 month. Shipped
+              industry-first LLM products with 90% adoption. Led 300+ user
+              interviews. Specializing in marketplace platforms, AI integration,
+              and turning ambiguity into traction.
             </small>
           </article>
           <article className="about__card">
