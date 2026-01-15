@@ -1,6 +1,17 @@
 import "./about.scss";
-import ME from "../../assets/images/li-headshot.jpg";
-import { FaUserNinja, FaMagic, FaHandsHelping } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import ME1 from "../../assets/images/Brandon On Site.PNG";
+import ME2 from "../../assets/images/Brandon IFMA Presidence Conference Announcement to Execs.PNG";
+import ME3 from "../../assets/images/brandon-working.JPG";
+import ME4 from "../../assets/images/Brandon Takes CutandDry Atop Kilimanjaro.JPG";
+import ME5 from "../../assets/images/B on Smutwood.PNG";
+import {
+  FaUserNinja,
+  FaMagic,
+  FaHandsHelping,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 import { paragraph } from "./About_Me";
 
 function calculateYearsBetween(pastDate) {
@@ -29,6 +40,65 @@ const About = () => {
   const LifeLeadYears = calculateYearsBetween(LifeLeadDate);
   const coopDate = "2017/04/01";
   const ageYears = calculateYearsBetween(coopDate);
+
+  // Carousel state
+  const images = [
+    { src: ME1, alt: "Professional headshot" },
+    { src: ME2, alt: "At the lake" },
+    { src: ME3, alt: "Working" },
+    { src: ME4, alt: "Safari adventure" },
+    { src: ME5, alt: "LinkedIn headshot" },
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  // Auto-play carousel (optional - can be disabled)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    }
+    if (isRightSwipe) {
+      goToPrevious();
+    }
+  };
 
   return (
     <>
@@ -80,15 +150,63 @@ const About = () => {
 
         <div className="container about__container">
           <div className="about__me">
-            <div className="about__me-image">
-              <img src={ME} alt="About Me" />
+            <div className="about__carousel">
+              <div
+                className="about__carousel-container"
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+              >
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`about__carousel-slide ${
+                      index === currentIndex ? "active" : ""
+                    }`}
+                  >
+                    <div className="about__me-image">
+                      <img src={image.src} alt={image.alt} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Navigation Buttons */}
+              <button
+                className="about__carousel-btn about__carousel-btn--prev"
+                onClick={goToPrevious}
+                aria-label="Previous image"
+              >
+                <FaChevronLeft />
+              </button>
+              <button
+                className="about__carousel-btn about__carousel-btn--next"
+                onClick={goToNext}
+                aria-label="Next image"
+              >
+                <FaChevronRight />
+              </button>
+
+              {/* Indicator Dots */}
+              <div className="about__carousel-indicators">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`about__carousel-indicator ${
+                      index === currentIndex ? "active" : ""
+                    }`}
+                    onClick={() => goToSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
-          <div class="panel-wrapper">
-            <a href="#show" class="show btn2" id="show">
+          <div className="panel-wrapper">
+            <a href="#show" className="show btn2" id="show">
               Continue Reading
             </a>
-            <a href="#hide" class="hide btn2" id="hide">
+            <a href="#hide" className="hide btn2" id="hide">
               Hide
             </a>
             <div className="paragraph">
@@ -105,7 +223,7 @@ const About = () => {
                   )
                 )}
             </div>
-            <div class="fade"></div>
+            <div className="fade"></div>
             <a href="#contact" className="btn btn-primary">
               Let's Talk
             </a>
