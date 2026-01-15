@@ -1,10 +1,13 @@
 import "./about.scss";
 import { useState, useEffect } from "react";
 import ME1 from "../../assets/images/Brandon On Site.PNG";
-import ME2 from "../../assets/images/Brandon IFMA Presidence Conference Announcement to Execs.PNG";
-import ME3 from "../../assets/images/brandon-working.JPG";
-import ME4 from "../../assets/images/Brandon Takes CutandDry Atop Kilimanjaro.JPG";
-import ME5 from "../../assets/images/B on Smutwood.PNG";
+import ME2 from "../../assets/images/Brandon Takes CutandDry Atop Kilimanjaro.JPG";
+import ME3 from "../../assets/images/Brandons Pitch to Executives at Ifma.JPG";
+import ME4 from "../../assets/images/Brandon and Daniel at Conference in KC.PNG";
+import ME5 from "../../assets/images/Brandon IFMA Presidence Conference Announcement to Execs.PNG";
+import ME6 from "../../assets/images/B on Smutwood.PNG";
+import ME7 from "../../assets/images/Brandon at IFMA running Sales.PNG";
+import ME8 from "../../assets/images/Brandon and Friends.JPG";
 import {
   FaUserNinja,
   FaMagic,
@@ -44,10 +47,13 @@ const About = () => {
   // Carousel state
   const images = [
     { src: ME1, alt: "Professional headshot" },
-    { src: ME2, alt: "At the lake" },
-    { src: ME3, alt: "Working" },
-    { src: ME4, alt: "Safari adventure" },
+    { src: ME2, alt: "Kilimanjaro" },
+    { src: ME3, alt: "Pitch to Executives at Ifma" },
+    { src: ME4, alt: "Conference in KC" },
     { src: ME5, alt: "LinkedIn headshot" },
+    { src: ME6, alt: "Smutwood" },
+    { src: ME7, alt: "Running Sales at IFMA" },
+    { src: ME8, alt: "Friends" },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);

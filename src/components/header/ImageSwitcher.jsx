@@ -61,12 +61,12 @@ function ImageSwitcher() {
           key={index}
           src={image.src}
           alt={image.alt}
-          className={`header-image ${
-            index === currentImage ? "active" : ""
-          } ${isHovered ? "hovered" : ""}`}
+          className={`header-image ${index === currentImage ? "active" : ""} ${
+            isHovered ? "hovered" : ""
+          }`}
         />
       ))}
-      
+
       {/* Indicator dots */}
       <div className="header-image-indicators">
         {images.map((_, index) => (
