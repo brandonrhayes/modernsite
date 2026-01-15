@@ -44,6 +44,7 @@
   display: grid;
   place-items: center;
   position: relative;
+  overflow: visible; /* Allow buttons to overflow */
 }
 
 .about__carousel {
@@ -125,11 +126,11 @@
   }
 
   &--prev {
-    left: 1rem;
+    left: -1.5rem; /* 50% of button width (3rem) outside the frame */
   }
 
   &--next {
-    right: 1rem;
+    right: -1.5rem; /* 50% of button width (3rem) outside the frame */
   }
 
   @media screen and (max-width: 800px) {
@@ -138,11 +139,11 @@
     font-size: 1.2rem;
 
     &--prev {
-      left: 0.5rem;
+      left: -1.25rem; /* 50% of button width (2.5rem) outside the frame */
     }
 
     &--next {
-      right: 0.5rem;
+      right: -1.25rem; /* 50% of button width (2.5rem) outside the frame */
     }
   }
 }
