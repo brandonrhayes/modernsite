@@ -68,7 +68,7 @@ const About = () => {
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
     );
   };
 
@@ -108,10 +108,10 @@ const About = () => {
     <>
       <section id="about">
         <h5>
-          Product Builder | World Explorer | Strategic (Stoic) Thinker |
-          Optimizer of What Matters | Investor in Quality & Growth
+          Product Builder | World Explorer | Stoic Thinker | Optimizer of What
+          Matters | Investor in Quality
         </h5>
-        <h2>Biography</h2>
+        <h2>About Brandon</h2>
 
         <div className="container about__cards">
           <article className="about__card">
@@ -221,10 +221,10 @@ const About = () => {
                 .map(
                   (
                     p,
-                    idx // map each to a <p>
+                    idx, // map each to a <p>
                   ) => (
                     <p key={idx}>{p}</p>
-                  )
+                  ),
                 )}
             </div>
             <div className="fade"></div>

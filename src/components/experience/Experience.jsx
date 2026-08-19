@@ -7,9 +7,7 @@ const Experience = () => {
     //https://www.youtube.com/watch?app=desktop&v=G-Cr00UYokU
     <div className="experience__container">
       <section id="experience">
-        <h5>
-          A journey of growth, continuous improvement, and endless curiosity
-        </h5>
+        <h5>A journey of endless curiosity</h5>
         <h2>Experience</h2>
         <div className="experience-options">
           <LinkedInBadge />
