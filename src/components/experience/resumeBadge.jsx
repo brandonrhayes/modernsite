@@ -5,7 +5,7 @@ import { FaFileDownload } from "react-icons/fa";
 const ResumeBadge = () => {
   return (
     <a href={CV} download className="resume-badge">
-      <div className="resume-download__logo">
+      <div className="resume-badge__logo">
         <FaFileDownload />
         <p>Resume</p>
       </div>

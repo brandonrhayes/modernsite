@@ -1,18 +1,21 @@
 import "./about.scss";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import ME1 from "../../assets/images/Brandon On Site.PNG";
 import ME2 from "../../assets/images/Brandon Takes CutandDry Atop Kilimanjaro.JPG";
 import ME3 from "../../assets/images/Brandon and Daniel at Conference in KC.PNG";
-import ME4 from "../../assets/images/Brandon IFMA Presidence Conference Announcement to Execs.PNG";
+import ME4 from "../../assets/images/Brandon Talk Data To Me.jpg";
 import ME5 from "../../assets/images/B on Smutwood.PNG";
 import ME6 from "../../assets/images/Brandon at IFMA running Sales.PNG";
 import ME7 from "../../assets/images/Brandon and Friends.JPG";
+import ME8 from "../../assets/images/Brandon Arms Crossed on Mountain.jpg";
 import {
   FaUserNinja,
   FaMagic,
   FaHandsHelping,
   FaChevronLeft,
   FaChevronRight,
+  FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 import { paragraph } from "./About_Me";
 
@@ -48,14 +51,27 @@ const About = () => {
     { src: ME1, alt: "Professional headshot" },
     { src: ME2, alt: "Kilimanjaro" },
     { src: ME3, alt: "Conference in KC" },
-    { src: ME4, alt: "LinkedIn headshot" },
+    { src: ME4, alt: "Talk data to me" },
     { src: ME5, alt: "Smutwood" },
     { src: ME6, alt: "Running Sales at IFMA" },
     { src: ME7, alt: "Friends" },
+    { src: ME8, alt: "Arms crossed on a mountain summit" },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  const [bioExpanded, setBioExpanded] = useState(false);
+  const bioToggleRef = useRef(null);
+
+  const handleHideBio = () => {
+    setBioExpanded(false);
+    requestAnimationFrame(() => {
+      bioToggleRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    });
+  };
 
   // Auto-play carousel (optional - can be disabled)
   useEffect(() => {
@@ -152,6 +168,29 @@ const About = () => {
           </article>
         </div>
 
+        <div className="container about__thinking">
+          <h3>How I Think About Product</h3>
+          <div className="about__thinking-grid">
+            <p>
+              Most people can point at the pain. Spotting the actual problem
+              underneath it, the one worth solving, is a different skill, and
+              it's the one I get hired for.
+            </p>
+            <p>
+              Directing people who build isn't the same skill as building. I
+              get in and build, with a team or, lately, directly with AI
+              tools, because I don't trust a solution I haven't gotten my
+              hands into.
+            </p>
+            <p>
+              A solution that delights the customer but breaks finance,
+              legal, or a legacy system isn't a solution; it's a delayed
+              failure. I've spent as much time in compliance and systems
+              conversations as in user interviews.
+            </p>
+          </div>
+        </div>
+
         <div className="container about__container">
           <div className="about__me-wrapper">
             <div className="about__me">
@@ -213,13 +252,26 @@ const About = () => {
             </p>
           </div>
           <div className="panel-wrapper">
-            <a href="#show" className="show btn2" id="show">
-              Continue Reading
-            </a>
-            <a href="#hide" className="hide btn2" id="hide">
-              Hide
-            </a>
-            <div className="paragraph">
+            {!bioExpanded ? (
+              <button
+                ref={bioToggleRef}
+                type="button"
+                className="show btn2"
+                onClick={() => setBioExpanded(true)}
+              >
+                Continue Reading <FaChevronDown />
+              </button>
+            ) : (
+              <button
+                ref={bioToggleRef}
+                type="button"
+                className="hide btn2"
+                onClick={handleHideBio}
+              >
+                Hide <FaChevronUp />
+              </button>
+            )}
+            <div className={`paragraph ${bioExpanded ? "expanded" : ""}`}>
               {" "}
               {paragraph
                 .trim()

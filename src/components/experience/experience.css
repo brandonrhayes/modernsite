@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  align-items: center;
-  max-width: 75vw;
-  place-items: center;
+  align-items: stretch;
+  max-width: 700px;
+  justify-items: center;
   margin: 0 auto;
 }
 
@@ -35,8 +35,8 @@ p {
   .experience-options {
     display: grid;
     max-width: 90vw;
-    grid-template-columns: 65% 30%;
-    gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 @media screen and (max-width: 750px) {

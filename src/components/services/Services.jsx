@@ -19,15 +19,15 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>AI product roadmap & architecture design</p>
+              <p>AI roadmaps grounded in problems, not hype</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>ML-powered feature development & scaling</p>
+              <p>Scaling ML features that hold up against real data</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>AI go-to-market strategy & adoption</p>
+              <p>Building AI features people actually trust enough to use</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
@@ -39,7 +39,7 @@ const Services = () => {
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>Model evaluation & prompt engineering</p>
+              <p>Knowing when not to reach for an LLM</p>
             </li>
           </ul>
 

@@ -1,4 +1,4 @@
-.resume-download__logo {
+.resume-badge__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,18 +11,18 @@
   display: grid;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background-color: var(--color-bg-variant);
   border-radius: 2rem;
   text-align: center;
   align-items: center;
   justify-content: center;
   align-content: center;
-  box-shadow: 0 0 20px rgba(77, 181, 255, 0.2); /* stronger glow */
+  border: 1px solid var(--color-bg-variant);
+
   &:hover {
-    background-color: var(--color-bg-variant);
-    border: 1px solid var(--color-bg-variant);
-    transform: translateY(-3rem);
-    transform: scale(0.95); /* subtle pop */
+    background: transparent;
+    box-shadow: 0 0 10px rgba(77, 181, 255, 0.2); /* stronger glow */
+    transform: scale(0.99); /* subtle pop */
     cursor: default;
   }
 }
@@ -102,7 +102,7 @@
     max-width: 100%;
     min-height: 80px;
   }
-  .resume-download__logo {
+  .resume-badge__logo {
     font-size: 1rem;
   }
   .linkedin-badge__logo {

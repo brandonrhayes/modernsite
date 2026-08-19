@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaCloudDownloadAlt,
   FaUserNinja,
+  FaChevronDown,
 } from "react-icons/fa";
 
 const Recommendations = () => {
@@ -43,6 +44,7 @@ const Recommendations = () => {
       maskImage: "none",
       WebkitMaskImage: "none",
     });
+    const [hasMore, setHasMore] = useState(false);
 
     const handleScroll = () => {
       const el = textRef.current;
@@ -52,6 +54,7 @@ const Recommendations = () => {
       if (!scrollable) {
         // No scroll → no fade
         setFadeStyle({ maskImage: "none", WebkitMaskImage: "none" });
+        setHasMore(false);
         return;
       }
 
@@ -59,6 +62,7 @@ const Recommendations = () => {
       if (atBottom) {
         // Remove fade completely when at bottom
         setFadeStyle({ maskImage: "none", WebkitMaskImage: "none" });
+        setHasMore(false);
         return;
       }
 
@@ -75,23 +79,32 @@ const Recommendations = () => {
         WebkitMaskSize: "100% 100%",
         maskSize: "100% 100%",
       });
+      setHasMore(true);
     };
 
     useEffect(() => handleScroll(), [text]);
 
     return (
-      <div
-        ref={textRef}
-        className="recommendations__card__text"
-        onScroll={handleScroll}
-        style={fadeStyle}
-      >
-        {text
-          .trim()
-          .split("\n\n")
-          .map((p, idx) => (
-            <p key={idx}>{p}</p>
-          ))}
+      <div className="recommendations__card__text-wrapper">
+        <div
+          ref={textRef}
+          className="recommendations__card__text"
+          onScroll={handleScroll}
+          style={fadeStyle}
+        >
+          {text
+            .trim()
+            .split("\n\n")
+            .map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
+        </div>
+        {hasMore && (
+          <FaChevronDown
+            className="recommendations__card__more-indicator"
+            aria-hidden="true"
+          />
+        )}
       </div>
     );
   };

@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Contact = () => {
   return (
     <section id="contact">
-      <h5>Let’s start the conversation — I’m excited to connect</h5>
+      <h5>A few ways to reach me</h5>
       <h2>Contact</h2>
 
       <div className="container contact__container">
@@ -47,8 +47,8 @@ const Contact = () => {
         >
           <article className="contact__option">
             <FaInstagram className="contact__option-icon" />
-            <h3>Instagram</h3>
-            <h5>brandonrhayes</h5>
+            <h3>Follow Along</h3>
+            <h5>Behind the scenes</h5>
             <span className="contact__option-cta">DM Me</span>
           </article>
         </a>
