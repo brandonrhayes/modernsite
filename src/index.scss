@@ -87,13 +87,21 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 1.75rem;
+}
+
 h4 {
   font-size: 1.2rem;
   font-style: italic;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
 h6 {
-  font-size: 0.8 rem;
+  font-size: 0.8rem;
   font-style: italic;
 }
 
@@ -209,6 +217,14 @@ img {
   section {
     margin-top: 6rem;
   }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
@@ -221,12 +237,20 @@ img {
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1.3rem;
+  }
+
   h4 {
     font-size: 0.9rem;
   }
 
   h5 {
     font-size: 0.8rem;
+  }
+
+  h6 {
+    font-size: 0.75rem;
   }
 
   .container {

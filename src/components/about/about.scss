@@ -25,7 +25,7 @@
   }
 
   & small {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: var(--color-white);
   }
 }
@@ -37,6 +37,13 @@
   min-height: max-content;
 }
 
+.about__me-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .about__me {
   width: 100%;
   aspect-ratio: 1/1;
@@ -45,6 +52,14 @@
   place-items: center;
   position: relative;
   overflow: visible; /* Allow buttons to overflow */
+}
+
+.about__caption {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-light);
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .about__carousel {
@@ -233,7 +248,7 @@
   cursor: pointer;
   transition: var(--transition);
   margin-bottom: 1rem;
-  font-size: 0.5 rem;
+  font-size: 0.9rem;
 }
 
 .btn2:hover {
@@ -279,6 +294,11 @@
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
 @media screen and (max-width: 1200px) {
+  .about__cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -286,7 +306,11 @@
 
   .about__me {
     width: 50%;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto 0;
+  }
+
+  .about__me-wrapper {
+    margin-bottom: 4rem;
   }
 
   .about__carousel {
@@ -307,8 +331,12 @@
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
 @media screen and (max-width: 800px) {
   .about__me {
-    margin: 0 auto 3rem;
+    margin: 0 auto;
     width: 85%;
+  }
+
+  .about__me-wrapper {
+    margin-bottom: 3rem;
   }
 
   .about__carousel {
@@ -331,7 +359,7 @@
     }
 
     & small {
-      font-size: 0.65rem;
+      font-size: 0.85rem;
     }
   }
 

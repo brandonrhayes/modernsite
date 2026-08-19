@@ -249,7 +249,7 @@ export const testimonials = [
     avatar: Markus
   },
   {
-    name: "Nancy Mattys, B..A, B.Ed.",
+    name: "Nancy Mattys, B.A., B.Ed.",
     role: "Student Council Advisor, English Teacher",
     date: "January 23, 2017",
     relationship: "Brandon reported directly to Nancy",

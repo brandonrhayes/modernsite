@@ -19,7 +19,7 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <AiOutlineCheck className="service__list-icon" />
-              <p>AI product roadmap & achitecture design</p>
+              <p>AI product roadmap & architecture design</p>
             </li>
             <li>
               <AiOutlineCheck className="service__list-icon" />
@@ -44,18 +44,13 @@ const Services = () => {
           </ul>
 
           <div className="preaction">
-            <h5>Results-driven engagement</h5>
-            <div className="sidebyside">
-              <h2>$275.00</h2>
-              <h6>per hour*</h6>
-            </div>
-            <h6>*custom pricing based on scope</h6>
+            <h5>Results-driven engagement, scoped to your needs</h5>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Start Conversation
+              Let's Talk
             </a>
           </div>
         </article>
@@ -92,18 +87,13 @@ const Services = () => {
           </ul>
 
           <div className="preaction">
-            <h5>Results-driven engagement</h5>
-            <div className="sidebyside">
-              <h2>$325.00</h2>
-              <h6>per hour*</h6>
-            </div>
-            <h6>*custom pricing based on scope</h6>
+            <h5>Results-driven engagement, scoped to your needs</h5>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Start Conversation
+              Let's Talk
             </a>
           </div>
         </article>
@@ -141,16 +131,12 @@ const Services = () => {
 
           <div className="preaction">
             <h5>Flexible engagement</h5>
-            <div className="sidebyside">
-              <h2>$250.00</h2>
-              <h6>per hour</h6>
-            </div>
           </div>
 
           <div className="action">
             <a href="#contact" className="btn btn-magical">
               {" "}
-              Start Conversation
+              Let's Talk
             </a>
           </div>
         </article>

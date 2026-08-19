@@ -56,9 +56,9 @@
 }
 
 .linkedin-badge__headshot {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 1rem;
   object-fit: cover;
   margin-bottom: 1rem;
   border: 2px solid var(--color-bg-variant);
@@ -75,9 +75,9 @@
 
 .linkedin-badge__info {
   display: grid;
-  grid-template-columns: 15% 75%;
+  grid-template-columns: auto 1fr;
   gap: 1rem;
-  align-items: left;
+  align-items: start;
   padding: 1rem;
   color: var(--color-white);
 }
@@ -105,20 +105,6 @@
   .resume-download__logo {
     font-size: 1rem;
   }
-  .linkedin-badge__headshot {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 2px solid var(--color-bg-variant);
-    flex-shrink: 0; /* prevents shrinking in flexbox */
-    display: flex; /* switch to flex so fallback centers nicely */
-    align-items: center;
-    justify-content: center;
-    background: var(--color-light); /* optional: nice background for icon */
-  }
-
   .linkedin-badge__logo {
     width: 4rem;
   }
@@ -126,14 +112,16 @@
   .linkedin-badge__info {
     padding: 0.5rem;
   }
+
   .linkedin-badge__headshot {
-    width: 4rem;
-    height: 4rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
+
   @media screen and (max-width: 750px) {
     .linkedin-badge__headshot {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
     }
   }
 }
