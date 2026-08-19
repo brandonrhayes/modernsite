@@ -14,6 +14,8 @@ Health is the foundation. Connection is the lifeline. Strength often looks like 
 
 Professionally, I've carried those lessons into product leadership. For several years, I've thrived in high-ambiguity, zero-to-one environments. I've scaled AI/ML-powered SaaS and marketplace platforms into multi-million-dollar successes.
 
+Most AI features are AI looking for a use case. I start with the wicked problem and ask if a model is even the right tool; the real unlock is usually data architecture and judgment, not the LLM.
+
 I specialize in product-led growth, marketplace platforms with multi-tenant B2B architecture, and solving wicked problems: complex, shifting challenges that demand analytical rigor and empathy.
 
 My favorite part? Watching people thrive.

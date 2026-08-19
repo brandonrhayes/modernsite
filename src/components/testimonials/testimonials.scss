@@ -68,25 +68,21 @@
     &__name {
       font-weight: 700;
       margin-bottom: 0.25rem;
-      max-width: 1;
     }
 
     &__role {
       font-size: 0.8rem;
       color: var(--color-primary);
-      max-width: 1;
     }
 
     &__relationship {
       font-size: 0.8rem;
       color: var(--color-light);
-      max-width: 1;
     }
 
     &__date {
       font-size: 0.75rem;
       color: var(--color-light);
-      max-width: 1;
     }
 
     &__source {
@@ -96,13 +92,16 @@
       font-size: 0.9rem;
       padding-top: 2rem;
       color: var(--color-light);
-      max-width: 1;
 
       &.source-icon {
         height: 1em; // matches text height
         width: auto; // preserve aspect ratio
         display: inline-block;
       }
+    }
+
+    &__text-wrapper {
+      position: relative;
     }
 
     &__text {
@@ -114,13 +113,53 @@
       word-wrap: break-word; // ensures long words wrap
       overflow-wrap: break-word; // fallback for older browsers
       white-space: normal; // allows text to wrap normally
-      scrollbar-width: none;
-      scrollbar-color: var(--color-light) transparent;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-primary-variant) transparent;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary-variant);
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: var(--color-primary);
+      }
 
       & p {
         margin-bottom: 1rem; // increases spacing between paragraphs
         text-align: center;
       }
+    }
+
+    &__more-indicator {
+      position: absolute;
+      bottom: 0.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--color-white);
+      font-size: 0.9rem;
+      pointer-events: none;
+      animation: recommendations-more-bounce 1.6s ease-in-out infinite;
+    }
+  }
+
+  @keyframes recommendations-more-bounce {
+    0%,
+    100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 0.55;
+    }
+    50% {
+      transform: translateX(-50%) translateY(4px);
+      opacity: 1;
     }
   }
 
