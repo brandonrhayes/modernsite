@@ -80,7 +80,7 @@ const Footer = () => {
             <FaTwitter size={15} />
           </a>
         </DarkestTooltip>
-        <DarkestTooltip title="See what Brandon is reading">
+        <DarkestTooltip title="See what I'm reading">
           <a
             href="https://www.goodreads.com/brandonrhayes"
             target="_blank"
@@ -89,7 +89,7 @@ const Footer = () => {
             <FaGoodreadsG size={15} />
           </a>
         </DarkestTooltip>
-        <DarkestTooltip title="See what Brandon has been developing">
+        <DarkestTooltip title="See what I've been developing">
           <a
             href="https://www.github.com/brandonrhayes"
             target="_blank"
@@ -98,7 +98,7 @@ const Footer = () => {
             <FaGithub size={15} />
           </a>
         </DarkestTooltip>
-        <DarkestTooltip title="Pay Brandon">
+        <DarkestTooltip title="Support my work">
           <a
             href="https://paypal.me/brandonrhayes"
             target="_blank"

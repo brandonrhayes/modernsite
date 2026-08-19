@@ -24,7 +24,7 @@ const LinkedInBadge = () => {
         <div>
           <div className="linkedin-badge__name">Brandon Hayes</div>
           <div className="linkedin-badge__header">
-            Lead Product Manager | Marketplaces, AI Products, B2B SaaS Platforms
+            Senior Product Manager | Marketplaces, AI Products, B2B SaaS Platforms
           </div>
           <div className="linkedin-badge__recents">
             OpenTable | University of Waterloo

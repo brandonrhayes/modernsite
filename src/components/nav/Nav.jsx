@@ -23,13 +23,14 @@ const Nav = () => {
 
   return (
     <nav>
-      <LightTooltip title="To the Moon!">
+      <LightTooltip title="Home">
         <a
           href="/#"
           onClick={() => setActiveNav("#")}
           className={activeNav === "#" ? "active" : ""}
         >
           <FaHome size={25} />
+          <span className="nav__label">Home</span>
         </a>
       </LightTooltip>
       <LightTooltip title="About">
@@ -39,6 +40,7 @@ const Nav = () => {
           className={activeNav === "#about" ? "active" : ""}
         >
           <FaUserAstronaut size={25} />
+          <span className="nav__label">About</span>
         </a>
       </LightTooltip>
       <LightTooltip title="Experience">
@@ -48,6 +50,7 @@ const Nav = () => {
           className={activeNav === "#experience" ? "active" : ""}
         >
           <FaUserGraduate size={25} />
+          <span className="nav__label">Experience</span>
         </a>
       </LightTooltip>
       <LightTooltip title="Testimonials">
@@ -57,6 +60,7 @@ const Nav = () => {
           className={activeNav === "#testimonials" ? "active" : ""}
         >
           <FaHandHoldingHeart size={25} />
+          <span className="nav__label">Testimonials</span>
         </a>
       </LightTooltip>
       <LightTooltip title="Services">
@@ -66,6 +70,7 @@ const Nav = () => {
           className={activeNav === "#services" ? "active" : ""}
         >
           <FaUserTie size={25} />
+          <span className="nav__label">Services</span>
         </a>
       </LightTooltip>
       <LightTooltip title="Contact">
@@ -75,6 +80,7 @@ const Nav = () => {
           className={activeNav === "#contact" ? "active" : ""}
         >
           <FaCommentDots size={25} />
+          <span className="nav__label">Contact</span>
         </a>
       </LightTooltip>
     </nav>

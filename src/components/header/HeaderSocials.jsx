@@ -23,7 +23,7 @@ const HeaderSocials = () => {
 
   return (
     <div className="header__socials">
-      <DarkTooltip title="Reach Out">
+      <DarkTooltip title="Reach out">
         <a
           href="mailto:hello@brandonrhayes.com"
           target="_blank"
@@ -43,7 +43,7 @@ const HeaderSocials = () => {
         </a>
       </DarkTooltip>
 
-      <DarkTooltip title="DM on Instagram">
+      <DarkTooltip title="Connect on Instagram">
         <a
           href="https://www.instagram.com/brandonrhayes"
           target="_blank"

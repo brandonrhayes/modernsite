@@ -27,7 +27,7 @@ const PageNotFound = () => {
     </div>
         <img
         src={SAFARI_ME}
-        alt="Logo"
+        alt="Brandon on safari"
         className="notfound-logo"
         style={{ transform: `translateY(${scrollY * 0.1}px)` }}
       />

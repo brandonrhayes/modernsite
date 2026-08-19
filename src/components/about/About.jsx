@@ -108,8 +108,8 @@ const About = () => {
     <>
       <section id="about">
         <h5>
-          Product Builder | World Explorer | Stoic Thinker | Optimizer of What
-          Matters | Investor in Quality
+          0→1 Product Leadership | AI/ML & Marketplace Platforms | $2M+ to
+          9-Figure Impact
         </h5>
         <h2>About Brandon</h2>
 
@@ -153,58 +153,64 @@ const About = () => {
         </div>
 
         <div className="container about__container">
-          <div className="about__me">
-            <div className="about__carousel">
-              <div
-                className="about__carousel-container"
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
-              >
-                {images.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`about__carousel-slide ${
-                      index === currentIndex ? "active" : ""
-                    }`}
-                  >
-                    <div className="about__me-image">
-                      <img src={image.src} alt={image.alt} />
+          <div className="about__me-wrapper">
+            <div className="about__me">
+              <div className="about__carousel">
+                <div
+                  className="about__carousel-container"
+                  onTouchStart={handleTouchStart}
+                  onTouchMove={handleTouchMove}
+                  onTouchEnd={handleTouchEnd}
+                >
+                  {images.map((image, index) => (
+                    <div
+                      key={index}
+                      className={`about__carousel-slide ${
+                        index === currentIndex ? "active" : ""
+                      }`}
+                    >
+                      <div className="about__me-image">
+                        <img src={image.src} alt={image.alt} />
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+
+                {/* Indicator Dots */}
+                <div className="about__carousel-indicators">
+                  {images.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`about__carousel-indicator ${
+                        index === currentIndex ? "active" : ""
+                      }`}
+                      onClick={() => goToSlide(index)}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
 
-              {/* Indicator Dots */}
-              <div className="about__carousel-indicators">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`about__carousel-indicator ${
-                      index === currentIndex ? "active" : ""
-                    }`}
-                    onClick={() => goToSlide(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
+              {/* Navigation Buttons - Outside carousel to allow overflow */}
+              <button
+                className="about__carousel-btn about__carousel-btn--prev"
+                onClick={goToPrevious}
+                aria-label="Previous image"
+              >
+                <FaChevronLeft />
+              </button>
+              <button
+                className="about__carousel-btn about__carousel-btn--next"
+                onClick={goToNext}
+                aria-label="Next image"
+              >
+                <FaChevronRight />
+              </button>
             </div>
 
-            {/* Navigation Buttons - Outside carousel to allow overflow */}
-            <button
-              className="about__carousel-btn about__carousel-btn--prev"
-              onClick={goToPrevious}
-              aria-label="Previous image"
-            >
-              <FaChevronLeft />
-            </button>
-            <button
-              className="about__carousel-btn about__carousel-btn--next"
-              onClick={goToNext}
-              aria-label="Next image"
-            >
-              <FaChevronRight />
-            </button>
+            <p className="about__caption">
+              Product Builder · World Explorer · Investor in Quality
+            </p>
           </div>
           <div className="panel-wrapper">
             <a href="#show" className="show btn2" id="show">
